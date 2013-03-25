@@ -1,0 +1,12 @@
+---
+title: Mejorando el espacio físico
+author: Agustin
+layout: post
+---
+#
+
+[![][2]][2]
+
+ []: http://cb.platan.us/?attachment_id=33
+
+Estamos preparando la pared de la terraza de la oficina, que pasó mucho tiempo bastante fea, para transformarla en el soporte de nuestro logo. Voy a ir subiendo algunos avances.
