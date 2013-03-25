@@ -1,6 +1,9 @@
 markdown: rdiscount
 pygments: true
-remote_layout_url: http://192.168.1.113:3000/blog-assets
+url: http://cb.platan.us
+name: Código Banana
+description: El blog oficial de Platanus
+remote_layout_url: http://192.168.10.140:3000/blog-assets
 remote_layouts:
     - default
     - test
