@@ -1,10 +1,10 @@
 ---
+title: Eres el pulpo que andamos buscando
 author: Agustin
 layout: post
 ---
-#
 
-[![][2]][2]
+![][1]
 
 Imagen gentileza de zazzle.com
 
@@ -18,4 +18,4 @@ Nuestra empresa se llama Platanus (por eso el pulpo tiene que saber bailar con e
 
 Si te interesa, mándanos una descripción de ti en tercera persona, de no más de 1 párrafo, y tu CV, a soyelpulpo@platan.us
 
- []: http://2.bp.blogspot.com/-Ps04bbi2rIU/T-y8p29gjAI/AAAAAAAAAAc/vLgezzlA0w0/s1600/octopus_salsa_dancer_hat-.jpg
+[1]: http://2.bp.blogspot.com/-Ps04bbi2rIU/T-y8p29gjAI/AAAAAAAAAAc/vLgezzlA0w0/s1600/octopus_salsa_dancer_hat-.jpg

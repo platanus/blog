@@ -3,7 +3,6 @@ title: Internacionalización en Rails
 author: Agustin
 layout: post
 ---
-#
 
 Es una maravilla.
 Lo único que hay que hacer es crear un archivo yaml en config/locales/ (por ejemplo es.yml), poner ahí los strings que queremos traducir, por ejemplo
@@ -14,19 +13,12 @@ es:
   despedida: "Hasta luego!"
 ```
 
-[] fdsf
-[ ] fdsf
-[x] fds
 , y en las vistas hacer algo así
-
-
-
-
-
 
 Además, claramente en alguna parte hay que decirle a Rails el idioma que queremos usar. Si queremos simplemente redefinir el default (que obviamente es inglés) basta con agregar la linea
 
-    config.i18n.default_locale = :es
-
+```ruby
+config.i18n.default_locale = :es
+```
 
 en el archivo config/application.rb

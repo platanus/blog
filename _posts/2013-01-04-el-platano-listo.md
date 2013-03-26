@@ -3,9 +3,9 @@ title: El plátano listo!
 author: Agustin
 layout: post
 ---
-#
 
-[![][2]][2]
+![][1]
+
 Ahí quedó listo el plátano pintado por el aprendiz
 
- []: http://cb.platan.us/?attachment_id=128
+[1]: /images/pared-platano.jpg
