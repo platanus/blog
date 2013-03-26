@@ -8,11 +8,15 @@ layout: post
 Es una maravilla.
 Lo único que hay que hacer es crear un archivo yaml en config/locales/ (por ejemplo es.yml), poner ahí los strings que queremos traducir, por ejemplo
 
-    es:
-      saludo: "Bienvenido"
-      despedida: "Hasta luego!"
+```ruby
+es:
+  saludo: "Bienvenido"
+  despedida: "Hasta luego!"
+```
 
-
+[] fdsf
+[ ] fdsf
+[x] fds
 , y en las vistas hacer algo así
 
 
