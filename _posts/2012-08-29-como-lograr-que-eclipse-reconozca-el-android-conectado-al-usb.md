@@ -2,6 +2,9 @@
 title: Cómo lograr que Eclipse reconozca el Android conectado al USB
 author: Agustin
 layout: post
+categories:
+    - android
+    - eclipse
 ---
 
 El SDK de Android trae el programita `adb` entre sus utilidades. Es el servidor de debug.  Con `adb kill-server` lo matas y con `adb devices` lo prendes y buscas dispositivos.

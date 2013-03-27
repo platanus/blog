@@ -2,6 +2,8 @@
 title: Empieza la pintura
 author: Agustin
 layout: post
+categories:
+    - headquarters
 ---
 
 ![][1]

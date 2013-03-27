@@ -2,9 +2,9 @@
 title: Platanus Pixels
 author: sbaixas
 layout: post
-tags:
-  - programacion
-  - tips
+categories:
+  - canvas
+  - javascript
 ---
 
 ![Platanus Pixels][1]

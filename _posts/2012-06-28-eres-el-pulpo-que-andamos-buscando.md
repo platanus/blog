@@ -2,6 +2,8 @@
 title: Eres el pulpo que andamos buscando
 author: Agustin
 layout: post
+categories:
+    - jobs
 ---
 
 ![][1]

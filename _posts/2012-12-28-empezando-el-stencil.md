@@ -2,6 +2,8 @@
 title: Empezando el stencil!
 author: Agustin
 layout: post
+categories:
+    - headquarters
 ---
 
 ![][1]

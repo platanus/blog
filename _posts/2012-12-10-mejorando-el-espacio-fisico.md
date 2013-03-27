@@ -2,6 +2,8 @@
 title: Mejorando el espacio físico
 author: Agustin
 layout: post
+categories:
+    - headquarters
 ---
 
 ![][1]

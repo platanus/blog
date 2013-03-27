@@ -2,6 +2,8 @@
 title: Avances de la pared
 author: Agustin
 layout: post
+categories:
+    - headquarters
 ---
 
 ![][1]

@@ -2,6 +2,8 @@
 title: El plátano listo!
 author: Agustin
 layout: post
+categories:
+    - headquarters
 ---
 
 ![][1]

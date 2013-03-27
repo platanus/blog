@@ -2,8 +2,8 @@
 title: Pared pintada
 author: Agustin
 layout: post
-tags:
-  - mejorando
+categories:
+    - headquarters
 ---
 
 ![][1]
