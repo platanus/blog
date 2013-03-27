@@ -2,7 +2,12 @@
 layout: default
 ---
 
-<section id="post">
-    <h1>{{ page.title }}</h1>
-    {{ content }}
-</section>
+<article id="post" class="mod-blog-post">
+    <section>
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+    </section>
+    <section class="post-by">
+        Posted by {{ page.author }}
+    </section>
+</article>

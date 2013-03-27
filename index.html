@@ -1,13 +1,59 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Código Banana
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<ul class="posts unstyled">
+{% for post in paginator.posts %}
+    <li>
+        <article class="mod-blog-post">
+            <header class="mod-blog-header">
+                <div class="date">
+                    {{ post.date | date_to_string }}
+                </div>
+                <a href="{{ post.url }}">
+                    <h3>{{ post.title }}</h3>
+                </a>
+                <ul class="categories">
+                    {% for category in post.categories %}
+                    <li>{{ category }}</li>
+                    {% endfor %}
+                </ul>
+            </header>
+            <div>
+                {{post.excerpt}} <a class="link" href="{{ post.url }}">Leer más...
+                </a>
+            </div>
+        </article>
+    </li>
+{% endfor %}
+</ul>
+
+<!-- Pagination links -->
+<div id="post-pagination" class="pagination">
+
+    {% if paginator.previous_page %}
+    <span class="previous">
+        {% if paginator.previous_page == 1 %}
+        <a class="link" href="/">previous</a>
+        {% else %}
+        <a class="link" href="/page{{paginator.previous_page}}">previous</a>
+        {% endif %}
+    </span>
+    {% else %}
+    <span class="previous disabled">
+        <span>previous</span>
+    </span>
+    {% endif %}
+    <span> - </span>
+    {% if paginator.next_page %}
+    <span class="next">
+        <a class="link" href="/page{{paginator.next_page}}">next</a>
+    </span>
+    {% else %}
+    <span class="next disabled">
+        <span>next</span>
+    </span>
+    {% endif %}
+
 </div>
