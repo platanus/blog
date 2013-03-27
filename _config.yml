@@ -5,7 +5,7 @@ pygments: true
 url: http://cb.platan.us
 name: Código Banana
 description: El blog oficial de Platanus
-remote_layout_url: http://192.168.10.140:3000/blog-assets
+paginate: 8
+remote_layout_url: http://platan.us/blog-assets
 remote_layouts:
     - default
-    - test
