@@ -1,7 +1,6 @@
 require 'fileutils'
 require 'digest/md5'
 require 'redcarpet'
-require 'albino'
 
 PYGMENTS_CACHE_DIR = File.expand_path('../../_cache', __FILE__)
 FileUtils.mkdir_p(PYGMENTS_CACHE_DIR)
