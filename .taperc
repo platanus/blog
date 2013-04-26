@@ -1,5 +1,0 @@
-[server]
-port = 8000
-
-[proxies]
-/assets = http://platan.us/assets

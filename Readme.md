@@ -1,9 +1,13 @@
 # Platanus Blog
 
 ## Development
-For testing use
 
 ```bash
-jekyll build
-./tape -R _sites
+grunt server
+```
+
+## Production
+
+```bash
+grunt build #the default
 ```
