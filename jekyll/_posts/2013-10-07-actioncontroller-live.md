@@ -34,7 +34,7 @@ And that's it. Thanks to the Live module the client will maintain a persistent c
 
 Ok, so now we can try to send something more structured, and to do this we'll make use of the HTML5 _server-sent events_ implementation (as usual, not yet supported by IE, but I think that there are a couple of js libraries that you can load to make SSEs work in IE). We just need to create an `EventSource` object in the client, and subscribe it to a server stream source. In this example, that's the _/stocks/prices_ resource (don't forget to add the routes, check the example code if you don't know how).
 
-```coffee
+```coffee-script
 source = new EventSource('/stocks/prices')
 source.addEventListener 'prices', (e) ->
 	console.log e.data
