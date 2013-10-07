@@ -55,6 +55,8 @@ From what I see in the [current version of the Live module][7], it seems that in
 
 That's it. I see that there's a lot of potential here. I'd like to expand this example to a bi-directional communication application, probably using a pub-sub server, so stay tuned.
 
+Example code [here][8].
+
 [1]: https://github.com/rails/rails/blob/4-0-stable/actionpack/lib/action_controller/metal/live.rb
 [2]: http://en.wikipedia.org/wiki/Server-sent_events
 [3]: http://www.html5rocks.com/en/tutorials/eventsource/basics/
@@ -62,3 +64,4 @@ That's it. I see that there's a lot of potential here. I'd like to expand this e
 [5]: http://code.macournoyer.com/thin/
 [6]: http://rainbows.rubyforge.org/
 [7]: https://github.com/rails/rails/blob/master/actionpack/lib/action_controller/metal/live.rb
+[8]: https://github.com/platanus/live-stream-demo
