@@ -13,9 +13,7 @@ Do you like blogging? Have you heard about the new kid on the block? It's called
 
 The editor is badass: you write in [Markdown][2] on the left in a vertically splitted window, and on the right you instantly see a preview of your post.
 
-We wanted to make it super easy to start using Ghost, so we created [Ghostr][4] a hosted platform where you can just start blogging.
-
-Would you like know how it feels to use Ghost? You can use our [demo blog][5].
+We wanted to make it super easy to start using Ghost, so we created [Ghostr][4], a hosted platform where you can just start blogging. Would you like to know how it feels to use Ghost? You can use our [7 day free trial][4]!
 
 [1]: http://ghost.org
 [2]: http://en.wikipedia.org/wiki/Markdown
