@@ -1,5 +1,5 @@
 ---
-title: Ghostr: A platform to host your Ghosts Ghost Blogs!
+title: Ghostr: A platform to host your Ghosts Ghost Blogs
 author: Andres
 layout: post
 categories:
