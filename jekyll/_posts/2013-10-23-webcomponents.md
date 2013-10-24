@@ -66,32 +66,32 @@ Para esto modificamos el archivo `pagination-element.html` y deberia quedar asi:
 ```html
 <polymer-element name="pagination-element"  attributes="count">
   <template>
-    <div class="pagination">
-      <ul>
-        <li><a href="#">Anterior</a></li>
-        <template repeat="{{page in pages}}">
-          <li><a href="#">{{page}}</a></li>
-        </template>
-        <li><a href="#">Siguiente</a></li>
-      </ul>
-    </div>
-    </template>
+  <div class="pagination">
+    <ul>
+      <li><a href="#">Anterior</a></li>
+      <template repeat="{ {page in pages }}">
+      <li><a href="#">{ {page}}</a></li>
+      </template>
+      <li><a href="#">Siguiente</a></li>
+    </ul>
+  </div>
+  </template>
   <script>
-    Polymer('pagination-element', {
-      count: 5,
-      created: function() {
-        this.pages = [];
-        for (i=1; i<=this.count; i++) {
-          this.pages.push(i);
-        }
-      },
-    });
+  Polymer('pagination-element', {
+    count: 5,
+    created: function() {
+      this.pages = [];
+      for (i=1; i<=this.count; i++) {
+        this.pages.push(i);
+      }
+    },
+  });
   </script>
 </polymer-element>
 
 ```
 
-Con este codigo, tenemos un nuevo elemento llamado `pagination-element` que acepta un attribute count donde definimos el numero de paginas a utilizar.
+Con este codigo, tenemos un nuevo elemento llamado `pagination-element` que acepta un attribute `count` donde definimos el numero de paginas a utilizar.
 
 El template que usamos en polymer muestra la capacidad de databinding que tiene utilizando los `{{}}` para leer las variables definidas en `this`. 
 
