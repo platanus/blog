@@ -64,13 +64,14 @@ Para esto modificamos el archivo `pagination-element.html` y deberia quedar asi:
 
 
 ```html
+{% raw %}
 <polymer-element name="pagination-element"  attributes="count">
   <template>
   <div class="pagination">
     <ul>
       <li><a href="#">Anterior</a></li>
-      <template repeat="{ {page in pages }}">
-      <li><a href="#">{ {page}}</a></li>
+      <template repeat="{{page in pages }}">
+      <li><a href="#">{{page}}</a></li>
       </template>
       <li><a href="#">Siguiente</a></li>
     </ul>
@@ -88,12 +89,13 @@ Para esto modificamos el archivo `pagination-element.html` y deberia quedar asi:
   });
   </script>
 </polymer-element>
+{% endraw %}
 
 ```
 
 Con este codigo, tenemos un nuevo elemento llamado `pagination-element` que acepta un attribute `count` donde definimos el numero de paginas a utilizar.
 
-El template que usamos en polymer muestra la capacidad de databinding que tiene utilizando los `{{}}` para leer las variables definidas en `this`. 
+El template que usamos en polymer muestra la capacidad de databinding que tiene utilizando los `{{}}` para leer las variables definidas en `this`.
 
 Este es un ejemplo muy basico de WebComponent pero deberia dar una idea del potencial que tiene.
 
