@@ -1,3 +1,4 @@
 jekyll/_site
 jekyll/_layouts/default.html
+jekyll/_layouts/post
 node_modules

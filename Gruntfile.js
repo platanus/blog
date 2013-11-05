@@ -32,7 +32,7 @@ module.exports = function (grunt) {
     },
     exec: {
       compile: {
-        cmd: 'cd <%= jekyll.root %> && jekyll build --drafts'
+        cmd: 'cd <%= jekyll.root %> && bundle exec jekyll build --drafts'
       }
     },
     connect: {

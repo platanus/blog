@@ -9,3 +9,11 @@ paginate: 8
 remote_layout_url: http://platan.us/blog-assets
 remote_layouts:
     - default
+    - post/jaime-bunzli
+    - post/leandro-segovia
+    - post/emilio-blanco
+    - post/felipe-campos
+    - post/andres-arellano
+    - post/juan-ignacio-donoso
+    - post/ignacio-baixas
+    - post/agustin-feuerhake

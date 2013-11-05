@@ -7,24 +7,6 @@ module Jekyll
     safe false
 
     def generate(site)
-      #themes_path = '_themes/'
-      #target_path = site.config['source'] + '/_layouts'
-      #unless site.config['remote_layout_url'] then
-        #unless (Dir.entries(target_path).size - 2 > 0) then
-          #STDERR.puts 'theme parameter is not set. The _layouts directory is not empty. Theme will not be generated.'
-          #return
-        #end
-        #puts "theme parameter is not set. Using _layouts directory. The plugin will now exit."
-        #return
-      #end
-#
-      #theme = File.join(themes_path, site.config['theme'])
-      #unless FileTest.directory?(theme) then
-        #STDERR.puts "Theme directory #{theme} not found. Theme will not be generated."
-        #return
-      #end
-#
-#
       remote_layouts_url = site.config['remote_layout_url']
       remote_layouts = site.config['remote_layouts']
 
@@ -34,8 +16,13 @@ module Jekyll
           layout = open(source).read
 
           begin
-            destination = File.join(site.config['source'], site.config['layouts'], layout_name + '.html')
-            open(destination, 'wb') do |file|
+            destination_file = File.join(site.config['source'], site.config['layouts'], layout_name + '.html')
+            destination_path = File.dirname(destination_file)
+            unless File.exist?(destination_path)
+              FileUtils.mkdir_p(destination_path)
+            end
+
+            open(destination_file, 'wb') do |file|
               file << layout
             end
           rescue
@@ -47,11 +34,7 @@ module Jekyll
         end
       end
 
-      #print "Copying theme '#{site.config['theme']}'.."
-      #FileUtils.cp_r(Dir.getwd + '/' + theme + '/.', target_path)
-      #puts "."
       site.read_layouts
-      #puts "done."
     end
   end
 end

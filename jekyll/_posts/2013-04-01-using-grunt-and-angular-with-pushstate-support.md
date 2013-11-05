@@ -1,7 +1,7 @@
 ---
 title: Using grunt and angular with pushstate support
 author: Blackjid
-layout: post
+layout: post/jaime-bunzli
 categories:
     - grunt
     - angularjs
