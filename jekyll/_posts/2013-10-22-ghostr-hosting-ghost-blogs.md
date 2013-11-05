@@ -1,7 +1,7 @@
 ---
 title: Ghostr - A platform to host your Ghost Blogs!
 author: Andres
-layout: post
+layout: post/andres-arellano
 categories:
     - ghost
     - blogs

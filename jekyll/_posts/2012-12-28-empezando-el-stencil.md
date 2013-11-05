@@ -1,7 +1,7 @@
 ---
 title: Empezando el stencil!
 author: Agustin
-layout: post
+layout: post/agustin-feuerhake
 categories:
     - headquarters
 ---

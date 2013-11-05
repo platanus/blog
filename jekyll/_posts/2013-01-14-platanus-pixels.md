@@ -1,6 +1,6 @@
 ---
 title: Platanus Pixels
-author: sbaixas
+author: Sebastian Baixas
 layout: post
 categories:
   - canvas

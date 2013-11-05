@@ -1,7 +1,7 @@
 ---
 title: Mejorando el espacio físico
 author: Agustin
-layout: post
+layout: post/agustin-feuerhake
 categories:
     - headquarters
 ---

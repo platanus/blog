@@ -1,7 +1,7 @@
 ---
 title: Eres el pulpo que andamos buscando
 author: Agustin
-layout: post
+layout: post/agustin-feuerhake
 categories:
     - jobs
 ---

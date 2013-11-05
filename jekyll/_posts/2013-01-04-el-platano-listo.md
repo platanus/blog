@@ -1,7 +1,7 @@
 ---
 title: El plátano listo!
 author: Agustin
-layout: post
+layout: post/agustin-feuerhake
 categories:
     - headquarters
 ---

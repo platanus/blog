@@ -1,7 +1,7 @@
 ---
 title: Platan.us lab comienza a abrirse al mundo.
 author: Agustin
-layout: post
+layout: post/agustin-feuerhake
 categories:
     - headquarters
 ---

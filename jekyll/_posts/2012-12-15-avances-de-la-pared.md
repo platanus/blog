@@ -1,7 +1,7 @@
 ---
 title: Avances de la pared
 author: Agustin
-layout: post
+layout: post/agustin-feuerhake
 categories:
     - headquarters
 ---

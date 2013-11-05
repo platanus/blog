@@ -1,7 +1,7 @@
 ---
 title: Internacionalización en Rails
 author: Agustin
-layout: post
+layout: post/agustin-feuerhake
 categories:
     - rails
     - I18n

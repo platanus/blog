@@ -1,7 +1,7 @@
 ---
 title: Webcomponents con Polymer
 author: Emilio Blanco
-layout: post
+layout: post/emilio-blanco
 categories:
     - html5
     - webcomponents

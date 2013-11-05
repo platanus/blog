@@ -1,7 +1,7 @@
 ---
 title: La industria
 author: Agustin
-layout: post
+layout: post/agustin-feuerhake
 categories:
   - conversación
   - industria

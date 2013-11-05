@@ -1,7 +1,7 @@
 ---
 title: Empieza la pintura
 author: Agustin
-layout: post
+layout: post/agustin-feuerhake
 categories:
     - headquarters
 ---

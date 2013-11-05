@@ -1,7 +1,7 @@
 ---
 title: Pared pintada
 author: Agustin
-layout: post
+layout: post/agustin-feuerhake
 categories:
     - headquarters
 ---

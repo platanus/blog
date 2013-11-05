@@ -1,7 +1,7 @@
 ---
 title: Rails 4 and Live Streaming
 author: Andres
-layout: post
+layout: post/andres-arellano
 categories:
     - rails
     - streaming

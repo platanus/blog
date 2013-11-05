@@ -1,7 +1,7 @@
 ---
 title: 'Se busca una &#8220;Cabra Avispada&#8221;'
 author: Agustin
-layout: post
+layout: post/agustin-feuerhake
 categories:
   - jobs
 ---
