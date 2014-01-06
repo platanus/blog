@@ -7,7 +7,7 @@ categories:
     - multithreading
 ---
 
-Ok, Rails 4 comes is threadsafe by default, so what does that mean? Are our apps faster now? It means that *Rails 4 is multithreaded*? Well, the truth is that this is not a big change in the code of Rails itself, is *just* a configuration default. Actually, the very same result can be achieved when running Rails 3.2 by uncomenting the `config.threadsafe!` option in the production environment file. But it is a meaningful change since it pops up the paralelism topic within the Rails community (this post is an example of that).
+Ok, Rails 4 is threadsafe by default, so what does that mean? Are our apps faster now? It means that *Rails 4 is multithreaded*? Well, the truth is that this is not a big change in the code of Rails itself, is *just* a different configuration default. Actually, the very same result can be achieved when running Rails 3.2 by uncommenting the `config.threadsafe!` option in the production environment file. But it is a meaningful change since it pops up the parallelism topic within the Rails community (this post is an example of that).
 
 So, what is the threadsafe thing doing? Let's give a look to the [`threadsafe!` method][1]:
 
@@ -46,16 +46,16 @@ Here at Platanus we like [Unicorn][6] a lot, so what about multi processing? Wel
 
 If we want to take advantage of running multi threaded applications, we need to use a capable server like puma, and be sure that we're *using* thread safe code. I say *using* and not writing, because this is also true for any *gem* that we may be using. That could be painful if gems are not well documented. Also, using JRuby or Rubinius seems to be a better option for multithreading to avoid the MRI's GIL.
 
-Multi processes servers, like Unicorn, don't share memory, so to allow parallelism they need to multiplicate the memory needed. But since memory is cheap, and writing code is not, this sounds like a good option too. Also, we can keep using non thread safe libraries.
+Multi processes servers, like Unicorn, don't share memory, so to allow parallelism they need to multiply the memory needed. But since memory is cheap, and writing code is not, this sounds like a good option too. Also, we can keep using non thread safe libraries.
 
 In any case, removing the `Rack::Lock` middleware seems a good move, since you don't want it for multithreading, or don't need it for multi processes. Kudos for the Rails collaborators!
 
 #### Also check
 
-[Removing config.threadsafe!](http://tenderlovemaking.com/2012/06/18/removing-config-threadsafe.html)
-[I like Unicorn because it's Unix](http://tomayko.com/writings/unicorn-is-unix)
-[Working with Ruby Threads](http://www.jstorimer.com/products/working-with-ruby-threads)
-[Does ruby have real multithreading?](http://stackoverflow.com/questions/56087/does-ruby-have-real-multithreading)
+* [Removing config.threadsafe!](http://tenderlovemaking.com/2012/06/18/removing-config-threadsafe.html)
+* [I like Unicorn because it's Unix](http://tomayko.com/writings/unicorn-is-unix)
+* [Working with Ruby Threads](http://www.jstorimer.com/products/working-with-ruby-threads)
+* [Does ruby have real multithreading?](http://stackoverflow.com/questions/56087/does-ruby-have-real-multithreading)
 
 
 [1]: https://github.com/rails/rails/blob/568394659c3e56581c684df77c0cc0e6e264a99f/railties/lib/rails/application/configuration.rb#L99-105
