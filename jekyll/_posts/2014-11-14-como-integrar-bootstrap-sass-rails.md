@@ -76,26 +76,18 @@ En nuestro ```views/cats/index.html.erb```, donde listamos a los gatos registrad
 </section>
 ```
 
-Pero queremos ir un paso más allá y extender nuestras propias clases con las que nos facilita Bootstrap, usándolas como base y añadiéndole nuestras propias declaraciones. Para esto usaremos ```@extend``` de SCSS:
+Pero queremos ir un paso más allá y extender nuestras propias clases con las que nos facilita Bootstrap, usándolas como base y añadiéndole nuestras propias declaraciones. Para comenzar, editaremos nuestro ```application.css.scss```, comenzando con importar Bootstrap:
 
 ```scss
 @import "bootstrap-sprockets";
 @import "bootstrap";
+```
 
+Agregamos algunos estilos relacionados con el body y la cabecera de la página, usando ```$brand-primary```, una variable de color establecida por Bootstrap:
+
+```scss
 body {
   background-color: #f0f0f0;
-}
-
-.catlog-button {
-  /* Creamos nuestro .catlog-button basándonos en las clases de bootstrap/_buttons.css.scss */
-  @extend .btn, .btn-default, .btn-lg;
-
-  /* Hacemos referencia a los colores definidos en bootstrap/_variables.css.scss */
-  background-color: $brand-success;
-  border: none; 
-  box-shadow: inset 0px -3px rgba(0,0,0,.1);
-  color: white;
-  margin-top: 16px;
 }
 
 #cats-header {
@@ -107,7 +99,27 @@ body {
     font-weight: 300;
   }
 }
+```
 
+Luego, daremos estilo a nuestro botón ```.catlog-button``` usando como base las clases de botones de Bootstrap. Para esto nos apoyaremos de ```@extend``` que nos entrega Sass.
+
+```scss
+.catlog-button {
+  /* Creamos nuestro .catlog-button basándonos en las clases de bootstrap/_buttons.css.scss */
+  @extend .btn, .btn-default, .btn-lg;
+
+  /* Hacemos referencia a los colores definidos en bootstrap/_variables.css.scss */
+  background-color: $brand-success;
+  border: none; 
+  box-shadow: inset 0px -3px rgba(0,0,0,.1);
+  color: white;
+  margin-top: 16px;
+}
+```
+
+Finalmente, daremos estilo al contenedor que mostrará los distintos gatos registrados en nuestra aplicación, usando el mismo método que acabamos de demostrar y extendiendo nuestras clases con ```.row``` y ```.thumbnail``` de Bootstrap.
+
+```scss
 #cats-container {
   /* Siguiendo la misma técnica, podemos utilizar cualquier clase disponible en Bootstrap. */
   @extend .row;
@@ -132,7 +144,7 @@ body {
 }
 ```
 
-Con este código, nuestro resultado es el siguiente: 
+Luego de estilar todos los componentes de nuestra vista, obtenemos el siguiente resultado:
 
 ![][1]
 
