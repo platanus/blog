@@ -12,3 +12,10 @@ markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 highlighter: rouge
+
+# Fetch data settings
+data_fetch_resources:
+  - url: http://platan.us/team.json
+    name: team
+    item_name_key: slug
+
