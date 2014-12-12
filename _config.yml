@@ -17,5 +17,5 @@ highlighter: rouge
 data_fetch_resources:
   - url: http://platan.us/team.json
     name: team
-    item_name_key: slug
+    item_name_key: github
 
