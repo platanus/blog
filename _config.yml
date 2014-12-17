@@ -8,10 +8,10 @@ url: "http://cb.platan.us" # the base hostname & protocol for your site
 github_username:  platanus
 
 # Build settings
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
-highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # Fetch data settings
 data_fetch_resources:
