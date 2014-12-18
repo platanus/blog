@@ -80,7 +80,7 @@ angular.module('MyApp').config(function($stateProvide) {
         return Bike.$search().$asPromise():
       },
 
-      promiseObj2: function($http){
+      promiseObj2: function(Bike){
         return Bike.$search().$asPromise().then(function(_bikes) {
           return doSomeStuffFirst(_bikes);
         });
