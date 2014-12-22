@@ -1,5 +1,16 @@
 # Platanus Blog
 
+[![Posts in ideas][ideas]][waffle]
+[![Posts in drafts][drafts]][waffle]
+[![Posts in review][in-review]][waffle]
+[![Posts in queue][queue]][waffle]
+
+[waffle]: http://waffle.io/platanus/blog
+[ideas]: https://badge.waffle.io/platanus/blog.svg?label=ideas&title=ideas
+[drafts]: https://badge.waffle.io/platanus/blog.svg?label=drafts&title=drafts
+[in-review]: https://badge.waffle.io/platanus/blog.svg?label=in-review&title=in-review
+[queue]: https://badge.waffle.io/platanus/blog.svg?label=queue&title=queue
+
 We are using [Jekyll][1] to generate a static site for our blog.
 
 ## Running in development
