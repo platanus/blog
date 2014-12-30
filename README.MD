@@ -1,47 +1,43 @@
 # Platanus Blog
 
-[![Posts in ideas][ideas]][waffle]
-[![Posts in drafts][drafts]][waffle]
-[![Posts in review][in-review]][waffle]
-[![Posts in queue][queue]][waffle]
+Usaremos [Jekyll][1] para generar nuestro blog como un sitio estático.
 
-[waffle]: http://waffle.io/platanus/blog
-[ideas]: https://badge.waffle.io/platanus/blog.svg?label=ideas&title=ideas
-[drafts]: https://badge.waffle.io/platanus/blog.svg?label=drafts&title=drafts
-[in-review]: https://badge.waffle.io/platanus/blog.svg?label=in-review&title=in-review
-[queue]: https://badge.waffle.io/platanus/blog.svg?label=queue&title=queue
+## Using the command line
 
-We are using [Jekyll][1] to generate a static site for our blog.
-
-## Running in development
+##### Running server in development
 
 To run jekyll on development just run the following. This will let you browse the blog in `locahost:4000`
 
 ```bash
-jekyll serve
+jekyll serve --drafts
 ```
 
-## Create a post
+##### Create a post
 
-We are not going to use the jekylls `draft post` support. Instead we will use githubs Pull Requests. 
+```bash
+jekyll post <post title>
+```
 
-This should be the workflow to create a new post
+Will create a new post in the `_posts` folder, ready to be published right away
 
-1. Create a branch for the new post
-1. Add the new post to the `_posts` folder
-1. Commit the post (you can commit unfinished post)
-1. Push the branch
-1. Create a Pull Request
+##### Create a draft
 
-Now you can work in you post locally, also commit changes whenever you want to share with the team and get feedback.
+Will create a new post in the `_drafts` folder, without the timestamp. This is the prefered way to create a post.
 
-When your post is finished you can `squash` all commits into a single commit.
+```bash
+jekyll draft <draft post title>
+```
 
-> You can use [sublime-jekyll][2] to make the post creation smoother.  
+##### Publish a draft
+
+This will move the draft to the `_posts` folder and add the corresponding timestamp.
+
+```bash
+jekyll publish _draft/<draft file>
+```
 
 ## Publish
 
 To publish just merge a a branch to the `master` branch and the blog will be automatically rebuild and published
 
 [1]: http://jekyllrb.com
-[2]: https://github.com/23maverick23/sublime-jekyll
