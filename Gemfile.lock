@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/platanus/jekyll-compose.git
+  revision: 629442d09cf04f7f73e9748aaf75a63e7e11b743
+  branch: defaults-config
+  specs:
+    jekyll-compose (0.1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -69,4 +76,5 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 2.5.0)
+  jekyll-compose!
   rouge (~> 1.7.4)

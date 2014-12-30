@@ -19,3 +19,5 @@ data_fetch_resources:
     name: team
     item_name_key: github
 
+# Jekyll compose
+post_type: md
