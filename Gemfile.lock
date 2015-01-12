@@ -1,10 +1,3 @@
-GIT
-  remote: git://github.com/platanus/jekyll-compose.git
-  revision: 629442d09cf04f7f73e9748aaf75a63e7e11b743
-  branch: defaults-config
-  specs:
-    jekyll-compose (0.1.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -39,6 +32,7 @@ GEM
       toml (~> 0.1.0)
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
+    jekyll-compose (0.2.0)
     jekyll-gist (1.1.0)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.3.0)
@@ -76,5 +70,5 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 2.5.0)
-  jekyll-compose!
+  jekyll-compose (~> 0.2.0)
   rouge (~> 1.7.4)
