@@ -22,4 +22,5 @@ data_fetch_resources:
 # Jekyll compose
 post_type: md
 
-analyticsid: UA-XXXXXXXX-X
+# Google Analytics
+analyticsid: UA-58887856-1
