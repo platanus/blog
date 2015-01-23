@@ -9,11 +9,11 @@ categories:
   - dashing
 ---
 
-I originally wrote this as a guide to get a dashboard working with a raspberry-pi. The problem was that I wanted to run my dashboard with the chromium browser to have al the props a modern browser has. But the raspberry-pi wasn't up the task. The dashboard with the pi was unstable and very slow.
+I originally wrote this as a guide to get a dashboard working with a raspberry-pi. The problem was that I wanted to run my dashboard with the chromium browser to have all the props a modern browser has. But the raspberry-pi wasn't up the task. The dashboard with the pi was unstable and very slow.
 
-As a second alternative the pi, I tryied a android stick. The advantages were that you can find dual or quad core stick with android that support full hardware acceleration. May be I picked to wrong one, but at the end the kernel was limited to 720p and our dashboard was 1080p and it look really awefull. Also android is not as nearly tweakeably as a bare linux OS.
+As a second alternative the pi, I tryied a android stick. The advantages were that you can find dual or quad core stick with android that support full hardware acceleration. May be I picked to wrong one, but at the end the kernel was limited to 720p and our dashboard was 1080p and it look really awefull. Also android is not as nearly tweakeable as a bare linux OS.
 
-Finally I went to the brand new ODROID-C1, is small, cheap (US$35, plus all the necessary accesories), it has a quad core processor, 1GB ram, and they provide a special version of Ubuntu 14.04 that runs very smooth on it, all hardware accelerated by the way. And, for now, is working very well.
+Finally I went to the brand new ODROID-C1, is small, cheap (US$35, plus all the necessary accesories), it has a quad core processor, 1GB ram, and hardkernel, the compeny behind, provide a special version of Ubuntu 14.04 that runs very smooth on it, all hardware accelerated by the way. And, for now, is working very well.
 
 Here is what I did to have a autostart, no desktop, full screen dashboard.
 
@@ -263,6 +263,7 @@ ethtool -s eth0 speed 100 duplex full autoneg off
 ```
 
 ## References
+- http://www.hardkernel.com/main/products/prdt_info.php
 - http://www.fusonic.net/en/blog/2013/07/31/diy-info-screen-using-raspberry-pi-dashing/
 - http://askubuntu.com/questions/139014/how-to-disable-lightdm
 - http://odroid.com/dokuwiki/doku.php?id=en:c1_tips
