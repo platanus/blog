@@ -9,7 +9,9 @@ categories:
   - dashing
 ---
 
-I originally wrote this as a guide to get a dashboard working with a raspberry-pi. The problem was that I wanted to run my dashboard with the chromium browser to have all the props a modern browser has. But the raspberry-pi wasn't up the task. The dashboard with the pi was unstable and very slow.
+Here at platanus he have a 42" tv screen with some metrics about our products, our resources and some fun and usefull info. The software we are using behind it is [Dashing](http://dashing.io), a really cool sinatra based application to create dashboards with different widgets of information. 
+
+I originally wrote this as a guide to get the dashboard working with a raspberry-pi. The problem was that I wanted to run my dashboard with the chromium browser to have all the props a modern browser has. But the raspberry-pi wasn't up the task. The dashboard with the pi was unstable and very slow.
 
 As a second alternative the pi, I tryied a android stick. The advantages were that you can find dual or quad core stick with android that support full hardware acceleration. May be I picked to wrong one, but at the end the kernel was limited to 720p and our dashboard was 1080p and it look really awefull. Also android is not as nearly tweakeable as a bare linux OS.
 
