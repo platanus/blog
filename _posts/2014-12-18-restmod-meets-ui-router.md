@@ -1,6 +1,6 @@
 ---
 title: Using restmod with ui-router
-author: 
+authors: 
   - iobaixas
   - bunzli
 layout: post

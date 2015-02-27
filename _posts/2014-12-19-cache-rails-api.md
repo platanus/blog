@@ -1,7 +1,7 @@
 ---
 title: "Cache con Rails API"
 layout: post
-author:
+authors:
     - emilioeduardob
     - ldlsegovia
 categories:
