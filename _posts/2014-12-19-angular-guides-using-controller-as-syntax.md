@@ -1,7 +1,7 @@
 ---
 title: "Angular Guides: controller as syntax"
 layout: post
-author: 
+authors: 
     - emilioeduardob
     - blackjid
 categories: 

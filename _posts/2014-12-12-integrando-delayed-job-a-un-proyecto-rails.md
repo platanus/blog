@@ -1,6 +1,6 @@
 ---
 title: Integrando Delayed Job gem a un proyecto Rails
-author:
+authors:
     - arturopuente
     - ldlsegovia
 layout: post
