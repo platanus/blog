@@ -64,7 +64,7 @@ load_task "rails"     if was_required? 'capistrano/rails'
 load_task "nginx"     if was_required? 'capistrano/nginx'
 load_task "unicorn"   if was_required? 'capistrano3/unicorn'
 # Si quisiéramos añadir soporte para otro servidor de aplicaciones, podríamos añadir una línea como esta y tendríamos en `lib/negroku/tasks/puma.rake` los rake tasks que deseamos para manejar Puma.
-load_task "puma"      if was_required? "capistrano/puma"
+load_task "puma"      if was_required? "capistrano3/puma"
 load_task "delayed_job"   if was_required? 'capistrano/delayed-job'
 load_task "whenever"  if was_required? 'whenever/capistrano'
 
@@ -119,6 +119,8 @@ end
 
 ```
 
+Esta es la función que se llama para agregar una variable de entorno.
+
 ```bash
 # helper to build the add VAR cmd
 def build_add_var_cmd(vars_file, key, value)
@@ -130,7 +132,4 @@ def build_add_var_cmd(vars_file, key, value)
   cmd
 end
 ```
-
-
-
 
