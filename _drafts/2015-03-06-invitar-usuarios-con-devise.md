@@ -8,7 +8,7 @@ categories:
     - devise
 ---
 
-Muchas veces, nos toca realizar aplicaciones que no permiten que un usuario se registre libremente. Es decir, se necesita de un administrador (o algún usuario de mayor jerarquía) que cree una cuenta para ese nuevo usuario. Cuando esto ocurre, se nos presenta el problema de cómo entregar a esa persona las credenciales para que pueda acceder. Pensando un poco alrededor de este asunto, se determinó que esta que presento a continuación, es la mejor manera de resolver el problema.
+Muchas veces, nos toca realizar aplicaciones que no permiten que un usuario se registre libremente. Es decir, se necesita de un administrador (o algún usuario de mayor jerarquía) que cree una cuenta para ese nuevo usuario. Cuando esto ocurre, se nos presenta el problema de cómo entregar a esa persona las credenciales para que pueda acceder. Pensando alrededor de este asunto, ideamos esta solución que presento a continuación.
 
 1. El **administrador** entra en la aplicación.
 1. El **administrador** crea un nuevo usuario utilizando únicamente su Email.
