@@ -1,7 +1,10 @@
 ---
 layout: post
 title: Máquinas de Estado en Ruby y en Ruby on Rails
-
+author: juliogarciag
+categories:
+    - ruby
+    - rails
 ---
 
 Quizás hayan oído hablar de las [máquinas de estado](http://en.wikipedia.org/w/index.php?title=Finite-state_machine&redirect=no) antes y quizás no parezca una de esas cosas que siempre se usan o sea medio extraño hallarle un caso de uso a simple vista. Para los que no hayan oído hablar de ellas, una máquina de estados es una abstracción sobre el proceso mediante el cual un objeto pasa de un estado a otro. Pero, ¿No basta con cambiar el estado de algo y fin? Podría ser, pero sería más desordenado y menos expresivo. Para dejar en claro cómo es que usar una máquina de estados es útil, vamos a implementar un objeto mediante una máquina de estados: un torniquete, como los que vemos en supermercados, bancos, metros, etc. Uno así:
