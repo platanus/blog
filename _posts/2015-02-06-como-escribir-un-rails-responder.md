@@ -284,7 +284,7 @@ class ApiResponder < ActionController::Responder
   def serializer
     serializer_class = ActiveModel::Serializer.serializer_for(resource)
     if serializer_class.present?
-      serializer.new(resource, options)
+      serializer_class.new(resource, options)
     else
       resource
     end
