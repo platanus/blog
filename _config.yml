@@ -13,7 +13,7 @@ kramdown:
 
 # Fetch data settings
 data_fetch_resources:
-  - url: http://platan.us/team.json
+  - url: http://platan.us/team.json?filter=all
     name: team
     item_name_key: github
 
