@@ -16,6 +16,8 @@ module Jekyll
         data = JSON.parse(open(url).read)
 
         data.each do |item|
+          next unless item['develops']
+
           item_name = item[item_name_key]
           destination_path = File.join(data_path, name)
           destination_file = File.join(destination_path, item_name.downcase + '.yml')
