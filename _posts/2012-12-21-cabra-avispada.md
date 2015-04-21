@@ -1,6 +1,6 @@
 ---
 title: 'Se busca una &#8220;Cabra Avispada&#8221;'
-author: Agustin
+author: agustinf
 layout: post
 categories:
   - jobs

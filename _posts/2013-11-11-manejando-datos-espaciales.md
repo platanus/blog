@@ -1,6 +1,6 @@
 ---
 title: Manejando datos espaciales
-author: Leandro Segovia
+author: ldlsegovia
 layout: post
 categories:
     - rails

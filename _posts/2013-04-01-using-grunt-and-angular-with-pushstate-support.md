@@ -1,6 +1,6 @@
 ---
 title: Using grunt and angular with pushstate support
-author: Blackjid
+author: blackjid
 layout: post
 categories:
     - grunt

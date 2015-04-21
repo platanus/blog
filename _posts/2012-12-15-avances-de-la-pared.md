@@ -1,6 +1,6 @@
 ---
 title: Avances de la pared
-author: Agustin
+author: agustinf
 layout: post
 categories:
     - headquarters

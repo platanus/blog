@@ -1,6 +1,6 @@
 ---
 title: Rails 4 and Live Streaming
-author: Andres
+author: aarellano
 layout: post
 categories:
     - rails

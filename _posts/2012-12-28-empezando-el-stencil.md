@@ -1,6 +1,6 @@
 ---
 title: Empezando el stencil!
-author: Agustin
+author: agustinf
 layout: post
 categories:
     - headquarters

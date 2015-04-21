@@ -1,6 +1,6 @@
 ---
 title: Mejorando el espacio físico
-author: Agustin
+author: agustinf
 layout: post
 categories:
     - headquarters

@@ -1,6 +1,6 @@
 ---
 title: E2E Testing usando Rails + Protractor
-author: Leandro Segovia
+author: ldlsegovia
 layout: post
 categories:
     - rails

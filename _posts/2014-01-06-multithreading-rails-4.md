@@ -1,6 +1,6 @@
 ---
 title: Multithreading and Rails 4
-author: Andres
+author: aarellano
 layout: post
 categories:
     - rails

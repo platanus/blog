@@ -1,6 +1,6 @@
 ---
 title: Eres el pulpo que andamos buscando
-author: Agustin
+author: agustinf
 layout: post
 categories:
     - jobs

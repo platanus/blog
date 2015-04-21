@@ -1,6 +1,6 @@
 ---
 title: Rails DB Connection Pool... even without a DB!
-author: Andres
+author: aarellano
 layout: post
 categories:
     - rails

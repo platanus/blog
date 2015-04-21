@@ -1,6 +1,6 @@
 ---
 title: Usando git con archivos pesados
-author: Agustin
+author: agustinf
 layout: post
 categories:
     - git

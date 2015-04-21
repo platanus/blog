@@ -1,6 +1,6 @@
 ---
 title: d3js Gentle Introduction
-author: Agustin
+author: agustinf
 layout: post
 categories:
     - javascript

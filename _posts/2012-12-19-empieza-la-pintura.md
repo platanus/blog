@@ -1,6 +1,6 @@
 ---
 title: Empieza la pintura
-author: Agustin
+author: agustinf
 layout: post
 categories:
     - headquarters

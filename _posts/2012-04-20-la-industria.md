@@ -1,6 +1,6 @@
 ---
 title: La industria
-author: Agustin
+author: agustinf
 layout: post
 categories:
   - conversación

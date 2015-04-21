@@ -1,6 +1,6 @@
 ---
 title: Internacionalización en Rails
-author: Agustin
+author: agustinf
 layout: post
 categories:
     - rails

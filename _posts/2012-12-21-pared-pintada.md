@@ -1,6 +1,6 @@
 ---
 title: Pared pintada
-author: Agustin
+author: agustinf
 layout: post
 categories:
     - headquarters

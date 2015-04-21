@@ -1,6 +1,6 @@
 ---
 title: Rails Antipatterns
-author: Leandro Segovia
+author: ldlsegovia
 layout: post
 categories:
     - rails

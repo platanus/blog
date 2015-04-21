@@ -1,6 +1,6 @@
 ---
 title: Lectura y escritura rápida mediante Redis – parte 1
-author: Felipe
+author: felipecamposclarke
 layout: post
 categories:
     - database
