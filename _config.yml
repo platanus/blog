@@ -1,11 +1,9 @@
 # Site settings
-title: Codigo Banana
-email: contact@platan.us
-description: > # this means to ignore newlines until "baseurl:"
-  El blog oficial de Platanus
-baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://cb.platan.us" # the base hostname & protocol for your site
-github_username:  platanus
+
+safe: false
+
+paginate:             10
 
 # Build settings
 markdown: kramdown
@@ -22,8 +20,46 @@ data_fetch_resources:
 # Jekyll compose
 post_type: md
 
-# Google Analytics
-analyticsid: UA-58887856-1
+info:
+  title: Codigo Banana
+  subtitle: El blog de Platanus
+  logo:         platanus-gravatar.png
 
-# Discuss
-discuss_shortname: codigobanana
+  # cover_image:  bananas-background.jpg
+  # cover_image_caption: "Short North, Columbus, OH. Photo: Pineapple XVI"
+
+  twitter:      _platanus
+  github:       platanus
+
+  # Google Analytics tracking ID. Leave blank to disable tracking
+  google-analytics-id: 'UA-58887856-1'
+
+  # Comments
+  disqus:
+    # Eg. "exampleblog" Set to false to disable comments
+    shortname:  codigobanana
+
+  # Sharing settings
+  sharing:
+    twitter:    true
+    facebook:   true
+    gplus:      false
+    hn:         false
+    reddit:     false
+
+#
+# jekyll-assets: see more at https://github.com/ixti/jekyll-assets
+#
+assets:
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/images
+  js_compressor: uglifier
+  css_compressor: sass
+  cachebust: none
+  cache: false
+  gzip: [ text/css, application/javascript ]
+  debug: false
