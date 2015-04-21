@@ -16,6 +16,8 @@ data_fetch_resources:
   - url: http://platan.us/team.json?filter=all
     name: team
     item_name_key: github
+exclude:
+  - _data
 
 # Jekyll compose
 post_type: md
