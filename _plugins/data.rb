@@ -18,7 +18,7 @@ module Jekyll
         data.each do |item|
           item_name = item[item_name_key]
           destination_path = File.join(data_path, name)
-          destination_file = File.join(destination_path, item_name + '.yml')
+          destination_file = File.join(destination_path, item_name.downcase + '.yml')
 
           unless File.exist?(destination_path)
             FileUtils.mkdir_p(destination_path)
