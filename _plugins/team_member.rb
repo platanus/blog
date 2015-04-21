@@ -6,7 +6,7 @@ module Jekyll
       return [] if authors.nil?
 
       authors = authors.map do |github_username|
-        filePath = File.join('_data', 'team', "#{github_username}.yml")
+        filePath = File.join('_data', 'team', "#{github_username.downcase}.yml")
         data     = SafeYAML.load_file(filePath)
         data
       end
