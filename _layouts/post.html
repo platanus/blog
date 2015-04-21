@@ -13,7 +13,12 @@ layout: base
     <div class="container">
         <header>
             <div class="meta">
-                Por {{ page.authors | team_member | map: 'first_name_and_last_name' | array_to_sentence_string}}  &mdash;
+                {% if page.author %}
+                    {% assign authors = page.author | toArray %}
+                {% else %}
+                    {% assign authors = page.authors %}
+                {% endif%}
+                Por {{ authors | team_members | map: 'first_name_and_last_name' | array_to_sentence_string}} &mdash;
                 <time pubdate datetime="{{ page.date | date: "%Y-%d-%B" }}" title="{{ page.date | date: "%b %d, %Y" }}">{{ page.date | date: "%b %d, %Y" }}</time> &mdash;
                 {% include _read-time-estimate.html content=content %}
             </div>
@@ -28,7 +33,12 @@ layout: base
 
         <footer>
             <address>
-                {% for author_github in page.authors %}
+                {% if page.author %}
+                    {% assign authors = page.author | toArray %}
+                {% else %}
+                    {% assign authors = page.authors %}
+                {% endif%}
+                {% for author_github in authors %}
                     {%assign author = site.data.team[author_github] %}
                     <div class="author">
                         <img src="{{ author.email | gravatar }}"> {{ author.first_name }} {{ author.last_name }}
