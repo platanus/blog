@@ -1,6 +1,6 @@
 ---
 title: ¿Qué hay por debajo de SSH Agent Forwarding?
-author: Arturo Puente
+author: arturopuente
 layout: post
 categories:
     - ssh
