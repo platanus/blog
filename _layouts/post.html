@@ -49,7 +49,7 @@ layout: base
                 {% assign post = page.next %}
                 <section class="index">
                     <h3 class="title">Próximo: <a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h3>
-                    <p>{{ post.excerpt }}</p>
+                    <p>{{ post.excerpt | markdownify }}</p>
                     <hr>
                 </section>
             {% endif %}
