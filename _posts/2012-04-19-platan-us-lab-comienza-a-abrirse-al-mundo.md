@@ -2,7 +2,7 @@
 title: Platan.us lab comienza a abrirse al mundo.
 author: agustinf
 layout: post
-categories:
+tags:
     - headquarters
 ---
 

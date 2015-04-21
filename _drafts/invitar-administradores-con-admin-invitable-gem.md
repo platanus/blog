@@ -2,7 +2,7 @@
 layout: post
 title: Invitar administradores con Admin Invitable Gem
 author: ldlsegovia
-categories:
+tags:
     - rails
     - active admin
     - devise

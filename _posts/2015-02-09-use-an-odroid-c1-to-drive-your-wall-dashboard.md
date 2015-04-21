@@ -2,7 +2,7 @@
 title: Use an ODROID-C1 to drive your wall dashboard
 layout: post
 author: blackjid
-categories: 
+tags: 
   - dashboard
   - odroid
   - raspberry-pi

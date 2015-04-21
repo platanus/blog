@@ -2,7 +2,7 @@
 title: Internacionalización en Rails
 author: agustinf
 layout: post
-categories:
+tags:
     - rails
     - I18n
 ---

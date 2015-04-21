@@ -2,7 +2,7 @@
 title: E2E Testing usando Rails + Protractor
 author: ldlsegovia
 layout: post
-categories:
+tags:
     - rails
     - angularjs
     - protractor

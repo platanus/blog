@@ -2,7 +2,7 @@
 title: Manejando datos espaciales
 author: ldlsegovia
 layout: post
-categories:
+tags:
     - rails
     - geoserver
     - spatialdata

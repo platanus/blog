@@ -2,7 +2,7 @@
 title: Cómo lograr que Eclipse reconozca el Android conectado al USB
 author: agustinf
 layout: post
-categories:
+tags:
     - android
     - eclipse
 ---

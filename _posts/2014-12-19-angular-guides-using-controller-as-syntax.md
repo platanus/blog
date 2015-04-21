@@ -4,7 +4,7 @@ layout: post
 authors: 
     - emilioeduardob
     - blackjid
-categories: 
+tags: 
     - angularjs
     - styleguides
 ---

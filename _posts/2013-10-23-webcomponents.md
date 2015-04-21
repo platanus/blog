@@ -2,7 +2,7 @@
 title: Webcomponents con Polymer
 author: emilioeduardob
 layout: post
-categories:
+tags:
     - html5
     - webcomponents
     - polymer

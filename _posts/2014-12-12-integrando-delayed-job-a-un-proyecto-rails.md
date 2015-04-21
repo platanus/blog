@@ -4,7 +4,7 @@ authors:
     - arturopuente
     - ldlsegovia
 layout: post
-categories:
+tags:
     - Rails
     - Gems
 ---

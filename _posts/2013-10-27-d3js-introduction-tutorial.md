@@ -2,7 +2,7 @@
 title: d3js Gentle Introduction
 author: agustinf
 layout: post
-categories:
+tags:
     - javascript
     - libraries
     - svg

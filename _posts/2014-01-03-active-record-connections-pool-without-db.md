@@ -2,7 +2,7 @@
 title: Rails DB Connection Pool... even without a DB!
 author: aarellano
 layout: post
-categories:
+tags:
     - rails
     - ActiveRecord
 ---

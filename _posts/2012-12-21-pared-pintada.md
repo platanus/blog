@@ -2,7 +2,7 @@
 title: Pared pintada
 author: agustinf
 layout: post
-categories:
+tags:
     - headquarters
 ---
 

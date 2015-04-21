@@ -2,7 +2,7 @@
 title: Platanus Pixels
 author: sbaixas
 layout: post
-categories:
+tags:
   - canvas
   - javascript
 ---

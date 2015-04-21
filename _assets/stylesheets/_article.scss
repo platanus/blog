@@ -164,6 +164,15 @@ article {
             border:0;
             color:$textmuted;
         }
+
+        .tags {
+            color: $banana;
+
+            a {
+                border:0;
+                color: $banana;
+            }
+        }
     }
 
     img {

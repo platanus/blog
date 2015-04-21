@@ -4,7 +4,7 @@ authors:
   - iobaixas
   - bunzli
 layout: post
-categories:
+tags:
   - angular
   - restmod
   - ui-router

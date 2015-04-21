@@ -4,7 +4,7 @@ layout: post
 authors:
     - emilioeduardob
     - ldlsegovia
-categories:
+tags:
     - rails
     - cache
 ---

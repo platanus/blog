@@ -2,7 +2,7 @@
 title: Cuál es el tamaño de una base de datos MySQL
 author: aarellano
 layout: post
-categories:
+tags:
     - mysql
 ---
 

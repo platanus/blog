@@ -2,7 +2,7 @@
 title: Cómo acceder a un servidor rails local desde virtualbox
 author: agustinf
 layout: post
-categories:
+tags:
     - rails
     - frontend
 ---

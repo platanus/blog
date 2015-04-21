@@ -2,7 +2,7 @@
 title: El plátano listo!
 author: agustinf
 layout: post
-categories:
+tags:
     - headquarters
 ---
 

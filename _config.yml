@@ -11,6 +11,9 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+tag_page_layout: tags
+tag_page_dir: tags
+
 # Fetch data settings
 data_fetch_resources:
   - url: http://platan.us/team.json?filter=all

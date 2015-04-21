@@ -2,7 +2,7 @@
 title: 'Se busca una &#8220;Cabra Avispada&#8221;'
 author: agustinf
 layout: post
-categories:
+tags:
   - jobs
 ---
 

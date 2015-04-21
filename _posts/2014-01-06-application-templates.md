@@ -2,7 +2,7 @@
 title: Using templates to create new rails applications
 author: aarellano
 layout: post
-categories:
+tags:
     - rails
     - templates
 ---

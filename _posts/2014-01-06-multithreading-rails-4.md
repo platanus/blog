@@ -2,7 +2,7 @@
 title: Multithreading and Rails 4
 author: aarellano
 layout: post
-categories:
+tags:
     - rails
     - multithreading
 ---

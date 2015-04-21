@@ -2,7 +2,7 @@
 title: Avances de la pared
 author: agustinf
 layout: post
-categories:
+tags:
     - headquarters
 ---
 

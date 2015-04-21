@@ -2,7 +2,7 @@
 title: Pequeña guía sobre escribir historias
 author: juliogarciag
 layout: post
-categories:
+tags:
     - programming
     - patterns
     - comments

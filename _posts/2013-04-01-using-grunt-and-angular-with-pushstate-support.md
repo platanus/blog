@@ -2,7 +2,7 @@
 title: Using grunt and angular with pushstate support
 author: blackjid
 layout: post
-categories:
+tags:
     - grunt
     - angularjs
     - yeoman

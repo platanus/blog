@@ -2,7 +2,7 @@
 title: Rails Antipatterns
 author: ldlsegovia
 layout: post
-categories:
+tags:
     - rails
     - design patterns
 ---

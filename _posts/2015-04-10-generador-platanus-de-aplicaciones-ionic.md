@@ -2,7 +2,7 @@
 title: Generador Platanus de aplicaciones Ionic
 layout: post
 author: renemoraales
-categories:
+tags:
     - angularjs
     - ionic
 ---

@@ -2,7 +2,7 @@
 title: Ghostr - A platform to host your Ghost Blogs!
 author: aarellano
 layout: post
-categories:
+tags:
     - ghost
     - blogs
     - hosting

@@ -2,7 +2,7 @@
 title: "Cómo escribir un Rails Responder"
 layout: post
 author: juliogarciag
-categories:
+tags:
     - rails
     - api
     - good-practices

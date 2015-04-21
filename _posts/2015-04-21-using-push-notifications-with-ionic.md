@@ -4,7 +4,7 @@ layout: post
 authors:
     - emilioeduardob
     - renemoraales
-categories:
+tags:
     - angularjs
     - ionic
     - push

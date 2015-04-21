@@ -2,7 +2,7 @@
 title: Usando git con archivos pesados
 author: agustinf
 layout: post
-categories:
+tags:
     - git
 ---
 

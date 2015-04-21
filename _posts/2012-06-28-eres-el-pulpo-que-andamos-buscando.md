@@ -2,7 +2,7 @@
 title: Eres el pulpo que andamos buscando
 author: agustinf
 layout: post
-categories:
+tags:
     - jobs
 ---
 

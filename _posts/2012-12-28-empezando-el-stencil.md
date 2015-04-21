@@ -2,7 +2,7 @@
 title: Empezando el stencil!
 author: agustinf
 layout: post
-categories:
+tags:
     - headquarters
 ---
 

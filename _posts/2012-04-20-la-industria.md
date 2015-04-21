@@ -2,7 +2,7 @@
 title: La industria
 author: agustinf
 layout: post
-categories:
+tags:
   - conversación
   - industria
   - minería

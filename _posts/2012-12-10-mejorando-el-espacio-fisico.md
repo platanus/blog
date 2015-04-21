@@ -2,7 +2,7 @@
 title: Mejorando el espacio físico
 author: agustinf
 layout: post
-categories:
+tags:
     - headquarters
 ---
 

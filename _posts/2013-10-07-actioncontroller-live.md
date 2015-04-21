@@ -2,7 +2,7 @@
 title: Rails 4 and Live Streaming
 author: aarellano
 layout: post
-categories:
+tags:
     - rails
     - streaming
 ---

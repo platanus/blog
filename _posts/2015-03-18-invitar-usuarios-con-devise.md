@@ -2,7 +2,7 @@
 layout: post
 title: Invitar usuarios con Devise
 author: ldlsegovia
-categories:
+tags:
     - rails
     - active admin
     - devise
