@@ -22,6 +22,8 @@ data_fetch_resources:
 exclude:
   - _data
 
+permalink: :title
+
 # Jekyll compose
 post_type: md
 
