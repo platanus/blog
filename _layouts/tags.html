@@ -1,12 +1,17 @@
 ---
 layout: base
 ---
+<div class="tag-cover" style="background-image:url(/images/{{ site.info.cover_image }});">
+    <section>
+        <div class="container">
+            <h2>Articulos relacionados con </h2>
+            <h1 class="accent">{{ page.tag }}</h1>
+        </div>
+    </section>
+</div>
+
 <article>
   <div class="container">
-
-      <section>
-        <h2>Articulos relacionados con <span class="accent">{{ page.tag }}</span></h2>
-      </section>
 
       {% for post in page.posts %}
       <section class="index">
