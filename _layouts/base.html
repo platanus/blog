@@ -18,8 +18,8 @@
     <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
     {% if page.cover_image %}<meta property="og:image" content="{{ site.url }}/images/{{ page.cover_image }}"/>{% endif %}
     {% if page.excerpt %}
-    <meta property="og:description" content="{{ page.excerpt | xml_escape}}"/>
-    <meta name="description" content="{{ page.excerpt | xml_escape}}"/>
+    <meta property="og:description" content="{{ page.excerpt | remove: '<p>' | remove: '</p>' | xml_escape}}"/>
+    <meta name="description" content="{{ page.excerpt | remove: '<p>' | remove: '</p>' | xml_escape}}"/>
     {% endif %}
     <meta property="og:site_name" content="{{ site.info.title }}">
 </head>
