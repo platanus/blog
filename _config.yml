@@ -30,7 +30,7 @@ post_type: md
 info:
   title: Codigo Banana
   subtitle: El blog de Platanus
-  logo:         platanus-gravatar.png
+  logo:         platanus_gravatar.svg
 
   # cover_image:  bananas-background.jpg
   # cover_image_caption: "Short North, Columbus, OH. Photo: Pineapple XVI"
