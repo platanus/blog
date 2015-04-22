@@ -5,6 +5,7 @@ paginate: 10
 permalink: :title
 tag_page_layout: tags
 tag_page_dir: tags
+tag_permalink_style: pretty
 
 gems:
   - jekyll-assets
