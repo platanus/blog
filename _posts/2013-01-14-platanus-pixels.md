@@ -11,7 +11,7 @@ redirect_from: canvas/javascript/2013/01/14/platanus-pixels.html
 
 ![Platanus Pixels][1]
 
-[1]: /images/platano-pixeles.jpg
+[1]: /images/logo.jpg
 
 En mi pasantía veraniega en Platanus, hice un lab que consiste en la animación interactiva de una imagen (predeterminada) que se descompone y luego recompone en pixeles dependiendo de los movimientos y clicks del mouse. Pueden ver el resultado [aquí][2] y el código, en el [repositorio][3]
 
@@ -82,7 +82,7 @@ Lo cual iterando produciría un movimiento poco fluido e irregular.
 
 ![discreto][6]
 
-[6]: /images/platano-pixeles-mov-basico.jpg "Movimiento de Coordenadas"
+[6]: /images/platanus-pixels/mov-basico.jpg "Movimiento de Coordenadas"
 
 En este caso moverse *ms* en una dirección toma la misma cantidad de tiempo que para moverse raíz cuadrada de (2x*ms*x*ms*) es decir que existe un problema con todos los movimientos que no están alineados con los ejes x o y. Para solucionar este problema se necesita una dirección aparte de las coordenadas y la velocidad de movimiento par así poder (por medio de trigonometría) cambiar x e y acorde a la distancia total que queremos que se desplace el objeto en un “tick”.
 
@@ -122,7 +122,7 @@ Si llamamos a la función *vectorialAdvance* repetidamente tenemos que el objeto
 
 ![vectorial][7]
 
- [7]: /images/platano-pixeles-vectores.jpg "Movimiento Vectorial"
+ [7]: /images/platanus-pixels/vectores.jpg "Movimiento Vectorial"
 
 Esto produce un movimiento uniforme en cualquier dirección, pero hasta ahora solo en línea recta, el próximo problema es hacer que nuestro objeto tenga un punto de destino, para lo cual podemos usar la siguiente función.
 

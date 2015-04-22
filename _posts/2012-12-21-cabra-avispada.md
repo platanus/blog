@@ -15,5 +15,5 @@ En Platanus necesitamos la ayuda de una avispa. Tiene que ser **pilla**. Tiene q
 
 Buscamos una persona que tomará este puesto de trabajo en una tranquila casa de Vitacura, junto a un equipo creativo y joven. Queremos que nuestra avispa le guste tener **flexibilidad** de horario y no le guste sacar la vuelta. La avispa tiene que poder combinar trabajo profesional con chistes y tonteras. Si eres la avispa que estamos buscando, mándanos una descripción de ti, cualquier tontera hecha en Photohop y tu pretención de sueldo a avispa@platan.us
 
-[1]: /images/avispa.jpg
-[2]: /images/escritorio.jpg
+[1]: /images/cabra-avispada/avispa.jpg
+[2]: /images/cabra-avispada/escritorio.jpg
