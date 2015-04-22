@@ -37,13 +37,13 @@ layout: base
         {% endfor %}
         <section class="pagination" style="text-align:center">
           {% if paginator.next_page %}
-            <a href="/page{{ paginator.next_page }}" class="btn outline">‹ Anteriores</a>
+            <a href="/page{{ paginator.next_page }}" class="btn outline"><i class="fa fa-chevron-left"></i> Anteriores</a>
           {% endif %}
           {% if paginator.previous_page %}
             {% if paginator.previous_page == 1 %}
-            <a href="/" class="btn outline">Nuevos ›</a>
+            <a href="/" class="btn outline">Nuevos <i class="fa fa-chevron-right"></i></a>
             {% else %}
-            <a href="/page{{ paginator.previous_page }}" class="btn outline">Newer ›</a>
+            <a href="/page{{ paginator.previous_page }}" class="btn outline">Newer <i class="fa fa-chevron-right"></i></a>
             {% endif %}
           {% endif %}
         </section>
