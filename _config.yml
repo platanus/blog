@@ -1,9 +1,18 @@
-# Site settings
+# Jekyll settings
 url: "http://cb.platan.us" # the base hostname & protocol for your site
-
 safe: false
+paginate: 10
+permalink: :title
+tag_page_layout: tags
+tag_page_dir: tags
 
-paginate:             10
+gems:
+  - jekyll-assets
+  - jekyll/tagging
+  - jekyll-redirect-from
+
+exclude:
+  - _data
 
 # Build settings
 markdown: kramdown
@@ -11,22 +20,16 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-tag_page_layout: tags
-tag_page_dir: tags
-
 # Fetch data settings
 data_fetch_resources:
   - url: http://platan.us/team.json?filter=all
     name: team
     item_name_key: github
-exclude:
-  - _data
-
-permalink: :title
 
 # Jekyll compose
 post_type: md
 
+# Template options
 info:
   title: Codigo Banana
   subtitle: El blog de Platanus
