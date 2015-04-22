@@ -52,7 +52,7 @@ info:
   # Sharing settings
   sharing:
     twitter:    true
-    facebook:   true
+    facebook:   false
     gplus:      false
     hn:         false
     reddit:     false
