@@ -6,6 +6,7 @@ tags:
     - html5
     - webcomponents
     - polymer
+redirect_from: html5/webcomponents/polymer/2013/10/23/webcomponents.html
 ---
 
 WebComponents es una de las tecnologias que particularmente espero con mayor ansiedad ya que con esto, podemos crear nuestros propios elementos HTML(como ser un pagination, rating, etc) y de esta manera reutilizarlos en otros proyectos, o inclusive con la comunidad Open Source.

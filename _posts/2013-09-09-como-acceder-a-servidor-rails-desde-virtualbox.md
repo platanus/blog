@@ -5,6 +5,7 @@ layout: post
 tags:
     - rails
     - frontend
+redirect_from: rails/frontend/2013/09/09/como-acceder-a-servidor-rails-desde-virtualbox.html
 ---
 
 Explorer es tal vez la peor pesadilla de cualquier desarrollador front-end. Hace un tiempo en platan.us nos cambiamos todos a Mac y tengo la sensación de que gracias a esto la productividad ha subido notablemente. No se si es solo una sensación, pero al menos la sensación me gusta!

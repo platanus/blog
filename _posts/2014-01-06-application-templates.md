@@ -5,6 +5,7 @@ layout: post
 tags:
     - rails
     - templates
+redirect_from: rails/templates/2014/01/06/application-templates.html
 ---
 
 Rails 4 removed the option to override the behavior of the application builder, but we can use the Application Templates in order to customize the way our applications are created.

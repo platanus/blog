@@ -6,6 +6,7 @@ tags:
     - rails
     - active admin
     - devise
+redirect_from: rails/active admin/devise/2015/03/18/invitar-usuarios-con-devise.html
 ---
 
 Muchas veces, nos toca realizar aplicaciones que no permiten que un usuario se registre libremente. Es decir, se necesita de un administrador (o algún usuario de mayor jerarquía) que cree una cuenta para ese nuevo usuario. Cuando esto ocurre, se nos presenta el problema de cómo entregar a esa persona las credenciales para que pueda acceder. Pensando alrededor de este asunto, ideamos esta solución que presento a continuación.

@@ -4,6 +4,7 @@ author: agustinf
 layout: post
 tags:
     - jobs
+redirect_from: jobs/2012/06/28/eres-el-pulpo-que-andamos-buscando.html
 ---
 
 ![][1]

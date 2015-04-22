@@ -7,6 +7,7 @@ authors:
 tags: 
     - angularjs
     - styleguides
+redirect_from: angularjs/styleguides/2014/12/19/angular-guides-using-controller-as-syntax.html
 ---
 
 Angular nos provee una manera alternativa de definir los controladores llamada `controller as`, esta puede ser usada en la directiva `ng-controller`.

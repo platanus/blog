@@ -7,6 +7,7 @@ authors:
 tags:
     - rails
     - cache
+redirect_from: rails/cache/2014/12/19/cache-rails-api.html
 ---
 
 Muchas veces nos encontramos con endpoints que tienden a ser lentos debido a cálculos complejos, renderizado lento de la vista o JSON, volúmen grande de datos, etc.

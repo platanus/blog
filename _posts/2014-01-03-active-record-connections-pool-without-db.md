@@ -5,6 +5,7 @@ layout: post
 tags:
     - rails
     - ActiveRecord
+redirect_from: rails/ActiveRecord/2014/01/03/active-record-connections-pool-without-db.html
 ---
 
 This is going to be a super short post, just a *sticky-post* to remember an important behavior of rails when we're dealing with multi-threaded or multi-process web servers.

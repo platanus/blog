@@ -8,6 +8,7 @@ tags:
   - angular
   - restmod
   - ui-router
+redirect_from: angular/restmod/ui-router/2014/12/18/restmod-meets-ui-router.html
 ---
 
 

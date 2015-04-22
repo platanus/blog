@@ -7,6 +7,7 @@ tags:
     - patterns
     - comments
     - style
+redirect_from: programming/patterns/comments/style/2014/12/17/pequena-guia-para-escribir-historias.html
 ---
 
 

@@ -7,6 +7,7 @@ tags:
     - blogs
     - hosting
     - nodejs
+redirect_from: ghost/blogs/hosting/nodejs/2013/10/22/ghostr-hosting-ghost-blogs.html
 ---
 
 Do you like blogging? Have you heard about the new kid on the block? It's called [Ghost][1], and it's AWESOME. It's open source, and as you can see in its [github page][3], it has a super active community. We plan to be active contributors to that community as well.

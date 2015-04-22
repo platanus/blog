@@ -4,6 +4,7 @@ author: agustinf
 layout: post
 tags:
     - headquarters
+redirect_from: headquarters/2012/12/28/empezando-el-stencil.html
 ---
 
 ![][1]

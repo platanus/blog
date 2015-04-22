@@ -4,6 +4,7 @@ author: agustinf
 layout: post
 tags:
     - headquarters
+redirect_from: headquarters/2012/04/19/platan-us-lab-comienza-a-abrirse-al-mundo.html
 ---
 
 ![][1]

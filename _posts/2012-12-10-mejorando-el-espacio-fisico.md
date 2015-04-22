@@ -4,6 +4,7 @@ author: agustinf
 layout: post
 tags:
     - headquarters
+redirect_from: headquarters/2012/12/10/mejorando-el-espacio-fisico.html
 ---
 
 ![][1]

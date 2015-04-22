@@ -7,6 +7,7 @@ tags:
   - industria
   - minería
   - tips
+redirect_from: conversación/industria/minería/tips/2012/04/20/la-industria.html
 ---
 
 ![Ian Schultz][1]

@@ -8,6 +8,7 @@ tags:
     - protractor
     - testing
     - e2e
+redirect_from: rails/angularjs/protractor/testing/e2e/2014/03/29/e2e-usando-rails-y-protractor.html
 ---
 
 Buen día!, les cuento un cuento... Un día, tuve que participar en el desarrollo de una aplicación que utiliza **Rails + AngularJs**. El desarrollo avanzó y todos éramos felices. Hasta que un día, la aplicación empezó a fallar. Comenzó a notarse verdaderamente la necesidad de realizar tests de integración. Comencé la búsqueda de herramientas para realizar este tipo de pruebas en aplicaciones que utilizan **Angular** y rápidamente me encontré con **Protractor**. Estaba feliz! Protractor parecía encarnar todo lo que necesitaba para llevar adelante mi labor. Sin embargo, había un pequeño/gran detalle que esta herramienta no resolvía: **la integración con mi backend**. Por esto, decidí hacer este post con el objeto de mostrarles como llevar adelante **End to End tests** con Protractor y una posible solución al problema planteado.

@@ -5,6 +5,7 @@ author: renemoraales
 tags:
     - angularjs
     - ionic
+redirect_from: angularjs/ionic/2015/04/10/generador-platanus-de-aplicaciones-ionic.html
 ---
 
 **Ionic** es nuestro framework *de facto* para fabricar aplicaciones móviles en Platanus. Nos permite crear buenas experiencias con las herramientas a las que estamos acostumbrados a trabajar, es multiplataforma y es rápido para desarrollar. 

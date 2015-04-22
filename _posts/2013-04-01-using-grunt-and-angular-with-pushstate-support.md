@@ -6,6 +6,7 @@ tags:
     - grunt
     - angularjs
     - yeoman
+redirect_from: grunt/angularjs/yeoman/2013/04/01/using-grunt-and-angular-with-pushstate-support.html
 ---
 
 One of the neat things about [angularjs][1] routes system is the ability to use the html5 pushstate apis to remove the hash (#) from the url when creating a single page sites.

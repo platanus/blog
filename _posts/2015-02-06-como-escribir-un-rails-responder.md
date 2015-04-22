@@ -6,6 +6,7 @@ tags:
     - rails
     - api
     - good-practices
+redirect_from: rails/api/good-practices/2015/02/06/como-escribir-un-rails-responder.html
 ---
 
 Hace unos días Rails fue actualizado a 4.2 trayendo consigo varias mejoras de performance y otras cosas bastante interesantes como [AdequateRecord](http://tenderlovemaking.com/2014/02/19/adequaterecord-pro-like-activerecord.html), así que intenté actualizar una api Rails 4.1 a 4.2 y me encontré con algunas cosas interesantes:

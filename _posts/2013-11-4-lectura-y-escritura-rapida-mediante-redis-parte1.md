@@ -6,6 +6,7 @@ tags:
     - database
     - noSQL
     - cache
+redirect_from: database/noSQL/cache/2013/11/4/lectura-y-escritura-rapida-mediante-redis-parte1.html
 ---
 
 Al día de hoy, el sistema de almacenamiento en cache de preferencia es Redis. Poco a poco ha desplazando a su viejo contendor Memcached, y hace algunos años, se viene posicionando como el principal actor en el acceso y almacenamiento rápido de datos en múltiples sistemas. Twitter, Yahoo, Instagram, Flickr y GitHub son unos de los tantos que han confiado en esta potente base de datos. Pero ¿Por qué todo el mundo ama tanto a Redis? Sigue leyendo y encontraras la respuesta.

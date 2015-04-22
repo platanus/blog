@@ -9,6 +9,7 @@ tags:
     - authentication
     - restmod
     - angular
+redirect_from: rails/authentication/restmod/angular/2015/03/13/usando-angular-auth-lib-con-simple-token-authentication-gem.html
 ---
 
 Debido a que en cada proyecto que iniciamos, donde típicamente tenemos una aplicación cliente construída con angular que se comunica con una API Rails, utilizamos una estrategia de autenticación diferente, surgió la necesidad de implementar un estandar para resolver este problema y no tener que improvisar soluciones en el momento.

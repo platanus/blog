@@ -5,6 +5,7 @@ layout: post
 tags:
     - rails
     - multithreading
+redirect_from: rails/multithreading/2014/01/06/multithreading-rails-4.html
 ---
 
 Ok, Rails 4 is threadsafe by default, so what does that mean? Are our apps faster now? It means that *Rails 4 is multithreaded*? Well, the truth is that this is not a big change in the code of Rails itself, is *just* a different configuration default. Actually, the very same result can be achieved when running Rails 3.2 by uncommenting the `config.threadsafe!` option in the production environment file. But it is a meaningful change since it pops up the parallelism topic within the Rails community (this post is an example of that).

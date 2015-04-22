@@ -4,6 +4,7 @@ author: aarellano
 layout: post
 tags:
     - mysql
+redirect_from: mysql/2012/11/30/cual-es-el-tamano-de-una-base-de-datos-mysql.html
 ---
 
 Saber cuánto almacenamiento está utilizando una base de datos es una tarea común. Calcularlo podría ser complicado, ya que naturalmente el cálculo requiere considerar no sólo el número de “filas” en en cada tabla de la base de datos, sino que también el tipo de dato que se almacena en éstas. Afortunadamente no es nada difícil, ya que basta con ejecutar una consulta SQL para obtener la info.

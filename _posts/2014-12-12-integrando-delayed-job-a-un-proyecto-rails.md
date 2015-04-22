@@ -7,6 +7,7 @@ layout: post
 tags:
     - Rails
     - Gems
+redirect_from: Rails/Gems/2014/12/12/integrando-delayed-job-a-un-proyecto-rails.html
 ---
 
 [Delayed Job](https://github.com/collectiveidea/delayed_job) es una gema que permite ejecutar tareas "pesadas" en background de forma asíncrona. Para no ser redundantes con el [README](https://github.com/collectiveidea/delayed_job/blob/master/README.md) de la gema, mostraremos brevemente la instalación y uso (Rails 4) y luego haremos hincapié en lo más interesante de la gema.

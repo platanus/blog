@@ -47,6 +47,8 @@ GEM
     jekyll-compose (0.2.0)
     jekyll-gist (1.2.1)
     jekyll-paginate (1.1.0)
+    jekyll-redirect-from (0.6.2)
+      jekyll (~> 2.0)
     jekyll-sass-converter (1.3.0)
       sass (~> 3.2)
     jekyll-tagging (0.6.0)
@@ -108,6 +110,7 @@ DEPENDENCIES
   jekyll (~> 2.5.0)
   jekyll-assets
   jekyll-compose (~> 0.2.0)
+  jekyll-redirect-from
   jekyll-tagging
   rake
   rouge (~> 1.7.4)

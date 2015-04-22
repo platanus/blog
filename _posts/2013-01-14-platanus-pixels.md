@@ -5,6 +5,7 @@ layout: post
 tags:
   - canvas
   - javascript
+redirect_from: canvas/javascript/2013/01/14/platanus-pixels.html
 ---
 
 ![Platanus Pixels][1]

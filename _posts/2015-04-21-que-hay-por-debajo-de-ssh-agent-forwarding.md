@@ -5,6 +5,7 @@ layout: post
 tags:
     - ssh
     - ssh-agent
+redirect_from: ssh/ssh-agent/2015/04/21/que-hay-por-debajo-de-ssh-agent-forwarding.html
 ---
 
 Siempre me había hecho esa pregunta, pero empecemos por definir cómo funciona el proceso a grandes rasgos: el agent forwarding nos permite conectarnos a otros servidores autenticándonos mediante credenciales que tenemos localmente en nuestra computadora, de forma que el servidor intermedio sólo hace de puente entre ambos.

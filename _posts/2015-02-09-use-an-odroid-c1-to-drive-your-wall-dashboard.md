@@ -7,6 +7,7 @@ tags:
   - odroid
   - raspberry-pi
   - dashing
+redirect_from: dashboard/odroid/raspberry-pi/dashing/2015/02/09/use-an-odroid-c1-to-drive-your-wall-dashboard.html
 ---
 
 Here at platanus he have a 42" tv screen with some metrics about our products, our resources and some fun and usefull info. The software we are using behind it is [Dashing](http://dashing.io), a really cool sinatra based application to create dashboards with different widgets of information. 

@@ -8,6 +8,7 @@ tags:
     - angularjs
     - ionic
     - push
+redirect_from: angularjs/ionic/push/2015/04/21/using-push-notifications-with-ionic.html
 ---
 
 Utilizando [ngCordova][ngcordova] junto con el plugin [$cordovaPush][cordova-push] tenemos mucho trabajo hecho para utilizar notificaciones Push de Google y Apple. Pero igual hay cierto trabajo que queda hacerlo en nuestras apps.

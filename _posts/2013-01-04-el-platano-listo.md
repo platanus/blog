@@ -4,6 +4,7 @@ author: agustinf
 layout: post
 tags:
     - headquarters
+redirect_from: headquarters/2013/01/04/el-platano-listo.html
 ---
 
 ![][1]

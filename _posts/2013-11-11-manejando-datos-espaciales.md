@@ -7,6 +7,7 @@ tags:
     - geoserver
     - spatialdata
     - rgeo
+redirect_from: rails/geoserver/spatialdata/rgeo/2013/11/11/manejando-datos-espaciales.html
 ---
 
 Buen día! hago este post con el objeto de mostrarles como trabajar con datos espaciales utilizando:

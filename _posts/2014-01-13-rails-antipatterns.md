@@ -5,6 +5,7 @@ layout: post
 tags:
     - rails
     - design patterns
+redirect_from: rails/design patterns/2014/01/13/rails-antipatterns.html
 ---
 
 Hace un tiempo leí el libro **[Rails AntiPatterns: Best Practice Ruby on Rails Refactoring][1]** de los autores `Chad Pytel` y `Tammer Saleh`. Este libro intenta dar solución a muchas malas prácticas en las que normalmente incurrimos a la hora de diseñar y estructurar nuestro código Rails. Cada una de estas malas practicas es, en el libro, un AntiPattern y por cada anti-patrón los autores presentan una o varias soluciones. Si bien el libro tiene sus años, me parece que su contenido es completamente vigente a la fecha y con esto en mente escribo este post con el objeto de mostrar brevemente aquellas secciones (antipattern/solución) del mismo que me han parecido más útiles a lo largo de mi camino aprendiendo Rails.

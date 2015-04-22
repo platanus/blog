@@ -4,6 +4,7 @@ author: agustinf
 layout: post
 tags:
   - jobs
+redirect_from: jobs/2012/12/21/cabra-avispada.html
 ---
 
 ![][1]

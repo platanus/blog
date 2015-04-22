@@ -7,6 +7,7 @@ tags:
     - libraries
     - svg
     - graphics
+redirect_from: javascript/libraries/svg/graphics/2013/10/27/d3js-introduction-tutorial.html
 ---
 
 d3js is pretty popular right now, but many times it is confused with a true graphic library, though it is not. d3js is more similar to jQuery than to Raphaël. d3js helps you manipulate the elements on your page (on the DOM, to be specific), just as jQuery does, but with special emphasis on creating and manipulating the elements based on *data*. I wanted to share a very basic example, and walk you through line by line, because I think the examples in d3js' page are a bit overwhelming and too eye catching, making everybody anxious. I won't even show you the result so you can see it as your own achievement.

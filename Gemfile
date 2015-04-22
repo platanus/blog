@@ -9,6 +9,7 @@ gem 'uglifier'
 # gem 'github-pages'
 gem "rouge", "~> 1.7.4"
 gem 'jekyll-tagging'
+gem 'jekyll-redirect-from'
 
 group :jekyll_plugins do
   gem "jekyll-compose", "~> 0.2.0"
