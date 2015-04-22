@@ -4,7 +4,6 @@ author: agustinf
 layout: post
 tags:
     - javascript
-    - libraries
     - svg
     - graphics
 redirect_from: javascript/libraries/svg/graphics/2013/10/27/d3js-introduction-tutorial.html

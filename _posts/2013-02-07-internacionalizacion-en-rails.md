@@ -3,8 +3,8 @@ title: Internacionalización en Rails
 author: agustinf
 layout: post
 tags:
-    - rails
-    - I18n
+  - rails
+  - I18n
 redirect_from: rails/I18n/2013/02/07/internacionalizacion-en-rails.html
 ---
 

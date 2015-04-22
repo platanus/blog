@@ -3,8 +3,9 @@ title: Generador Platanus de aplicaciones Ionic
 layout: post
 author: renemoraales
 tags:
-    - angularjs
+    - angular
     - ionic
+    - cordova
 redirect_from: angularjs/ionic/2015/04/10/generador-platanus-de-aplicaciones-ionic.html
 ---
 

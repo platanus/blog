@@ -4,7 +4,7 @@ author: aarellano
 layout: post
 tags:
     - rails
-    - ActiveRecord
+    - active-record
 redirect_from: rails/ActiveRecord/2014/01/03/active-record-connections-pool-without-db.html
 ---
 

@@ -5,9 +5,10 @@ authors:
     - emilioeduardob
     - renemoraales
 tags:
-    - angularjs
+    - angular
     - ionic
-    - push
+    - notifications
+    - cordova
 redirect_from: angularjs/ionic/push/2015/04/21/using-push-notifications-with-ionic.html
 ---
 

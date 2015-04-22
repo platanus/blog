@@ -4,7 +4,6 @@ author: arturopuente
 layout: post
 tags:
     - ssh
-    - ssh-agent
 redirect_from: ssh/ssh-agent/2015/04/21/que-hay-por-debajo-de-ssh-agent-forwarding.html
 ---
 

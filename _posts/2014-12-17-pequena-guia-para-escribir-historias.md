@@ -3,10 +3,9 @@ title: Pequeña guía sobre escribir historias
 author: juliogarciag
 layout: post
 tags:
+    - ruby
     - programming
     - patterns
-    - comments
-    - style
 redirect_from: programming/patterns/comments/style/2014/12/17/pequena-guia-para-escribir-historias.html
 ---
 

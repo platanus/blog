@@ -4,7 +4,7 @@ author: ldlsegovia
 layout: post
 tags:
     - rails
-    - angularjs
+    - angular
     - protractor
     - testing
     - e2e

@@ -4,7 +4,7 @@ author: agustinf
 layout: post
 tags:
     - rails
-    - frontend
+    - front-end
 redirect_from: rails/frontend/2013/09/09/como-acceder-a-servidor-rails-desde-virtualbox.html
 ---
 

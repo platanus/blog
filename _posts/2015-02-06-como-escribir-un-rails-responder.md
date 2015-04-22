@@ -5,7 +5,6 @@ author: juliogarciag
 tags:
     - rails
     - api
-    - good-practices
 redirect_from: rails/api/good-practices/2015/02/06/como-escribir-un-rails-responder.html
 ---
 

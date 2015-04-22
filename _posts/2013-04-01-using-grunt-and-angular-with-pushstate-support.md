@@ -4,8 +4,9 @@ author: blackjid
 layout: post
 tags:
     - grunt
-    - angularjs
+    - angular
     - yeoman
+    - tools
 redirect_from: grunt/angularjs/yeoman/2013/04/01/using-grunt-and-angular-with-pushstate-support.html
 ---
 

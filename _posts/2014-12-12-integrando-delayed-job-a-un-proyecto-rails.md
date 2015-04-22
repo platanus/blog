@@ -5,8 +5,8 @@ authors:
     - ldlsegovia
 layout: post
 tags:
-    - Rails
-    - Gems
+    - rails
+    - gems
 redirect_from: Rails/Gems/2014/12/12/integrando-delayed-job-a-un-proyecto-rails.html
 ---
 

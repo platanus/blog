@@ -3,10 +3,9 @@ title: La industria
 author: agustinf
 layout: post
 tags:
-  - conversación
-  - industria
-  - minería
-  - tips
+    - industria
+    - minería
+    - tips
 redirect_from: conversación/industria/minería/tips/2012/04/20/la-industria.html
 ---
 

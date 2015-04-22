@@ -5,8 +5,7 @@ authors:
     - emilioeduardob
     - blackjid
 tags: 
-    - angularjs
-    - styleguides
+    - angular
 redirect_from: angularjs/styleguides/2014/12/19/angular-guides-using-controller-as-syntax.html
 ---
 

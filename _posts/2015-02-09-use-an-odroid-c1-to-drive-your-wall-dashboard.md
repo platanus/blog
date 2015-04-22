@@ -7,6 +7,7 @@ tags:
   - odroid
   - raspberry-pi
   - dashing
+  - hardware
 redirect_from: dashboard/odroid/raspberry-pi/dashing/2015/02/09/use-an-odroid-c1-to-drive-your-wall-dashboard.html
 ---
 

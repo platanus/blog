@@ -4,7 +4,6 @@ author: aarellano
 layout: post
 tags:
     - rails
-    - templates
 redirect_from: rails/templates/2014/01/06/application-templates.html
 ---
 

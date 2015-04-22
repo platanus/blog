@@ -6,7 +6,7 @@ authors:
     - ldlsegovia
 tags:
     - rails
-    - authentication
+    - auth
     - restmod
     - angular
 redirect_from: rails/authentication/restmod/angular/2015/03/13/usando-angular-auth-lib-con-simple-token-authentication-gem.html

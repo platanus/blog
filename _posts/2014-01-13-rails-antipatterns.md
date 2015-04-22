@@ -4,7 +4,7 @@ author: ldlsegovia
 layout: post
 tags:
     - rails
-    - design patterns
+    - patterns
 redirect_from: rails/design patterns/2014/01/13/rails-antipatterns.html
 ---
 
