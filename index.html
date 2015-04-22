@@ -19,11 +19,6 @@ layout: base
             <!-- {% if post.author.image %}<img src="/images/{{ post.author.image }}" class="avatar">{% endif %}-->
             <div>
                 <h2 class="title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
-                <div class="meta">
-                    <div class="tags">
-                        {{ post | tags }}
-                    </div>
-                </div>
                 <p>{{ post.excerpt }}</p>
                 <div class="meta">
                     {% if post.author %}
@@ -33,7 +28,8 @@ layout: base
                     {% endif%}
                     {{ authors | team_members | map: 'first_name_and_last_name' | array_to_sentence_string}} &mdash;
                     <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%b %d, %Y" }}">{{ post.date | date: "%b %d, %Y" }}</time> &mdash;
-                    {% include _read-time-estimate.html content=post.content %}
+                    {% include _read-time-estimate.html content=post.content %} &mdash;
+                    <span class="tags">{{ post | tags }}</span>
                 </div>
             </div>
             <hr>
