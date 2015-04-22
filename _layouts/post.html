@@ -64,6 +64,9 @@ layout: base
             {% endif %}
             {% if site.info.disqus.shortname %}
             <section>
+                {% if page.redirect_from %}
+                    {% assign disqus_url = page.redirect_from | prepend: '/' | prepend: site.url %}
+                {% endif %}
                 {% include _disqus.html %}
             </section>
             {% endif %}

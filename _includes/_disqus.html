@@ -3,6 +3,10 @@
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = '{{ site.info.disqus.shortname }}'; // required: replace example with your forum shortname
 
+    {% if disqus_url %}
+    var disqus_url = '{{ disqus_url }}';
+    {% endif %}
+
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
