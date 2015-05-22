@@ -2,4 +2,127 @@
 layout: post
 title: Dockerize your Rails App
 
+ This post its an introduction to Docker so you can use it to containerize your Ruby on Rails application. You will find out that is not that hard to use Docker to do it. 
+ 
+ First step: install Docker. 
+ 
+ In Ubuntu: 
+
+```wget -qO- https://get.docker.com/ | sh``` 
+ 
+ If that doesn't work for you go to https://docs.docker.com/installation/ubuntulinux/#installing-docker-on-ubuntu
+ If you have OSX go to https://docs.docker.com/installation/mac/
+
+ Now lets build a Dockerfile for your application.
+ 
+ ```
+ # Find the available ruby versions here: https://registry.hub.docker.com/_/ruby
+ FROM ruby:2.1
+ 
+ MAINTAINER "Your Name <your@email.com>"
+ 
+ ADD . /app
+ 
+ WORKDIR /app
+ 
+ RUN bundle install 
+ 
+ CMD ["rails","s"]
+ 
+ ```
+ 
+ This is the minimal expression of a Dockerfile. Dockerfiles are recipes for building Docker images that can run in a Docker container.  
+ 
+ This image is based on the ruby:2.1 image. 
+ Then we ADD the code of our app to the /app folder. 
+ Then we run bundle install to install the gems needed for our app. 
+ Finally we tell the image that our default command to run is "rails s".
+ 
+ Now build the image:
+ 
+ ``` docker build -t myimage . ```
+
+ If you run it again you will find that is much faster because docker caches the building process.
+ 
+ The problem with our Dockerfile is that the "ADD" line will be ran everytime that any file in our current folder changes. That would be very annoying. 
+
+ So to avoid that copy your Gemfile to a Gemfile.base file and lets change our Dockerfile like this: 
+ 
+ 
+ ```
+ FROM ruby:2.1
+ 
+ MAINTAINER "Your Name <your@email.com>"
+ 
+ ADD Gemfile.base /tmp/Gemfile
+ 
+ RUN cd /app && bundle install
+ 
+ ADD . /app
+ 
+ WORKDIR /app
+ 
+ RUN bundle install 
+ 
+ CMD ["rails","s"]
+ 
+ ```
+ 
+ With those 2 lines we will be caching most of our gems so when bundle install runs for second time in the Dockerfile it will run much faster. In the future you might want to update the Gemfile.base from time to time.
+ 
+ Build again your image:
+ 
+ ``` docker build -t myimage . ```
+
+ And run it like this:
+ 
+ ``` docker run -ti myimage ```
+
+ You will probably get an error because some of your services arent there. i.e your database.
+ 
+ Identify the services that your app uses. Mysql? Redis? MongoDB? 
+
+ You will find docker images for many of them here https://registry.hub.docker.com 
+
+ For example we can run MySQL from a docker image like this:
+ 
+ ``` docker run -d -v /var/lib/mysql -e MYSQL_ROOT_PASSWORD=mysecurepass mysql ``` 
+ 
+ This will run mysql as a daemon (-d) persisting the data (-v /var/lib/mysql) and setting the root pass (mysecurepass)
+
+ Now, we would like to connect to this database and there are many ways to do this but I prefer linking my app container to the db. 
+ 
+ ``` docker run -ti --link db:db myimage ```
+
+ When we do this, Docker creates a bunch of nice to have access points to the db container from the app container. We will be using the "db" hostname that docker creates in the /etc/hosts file of our app container.
+ 
+ Now this is a example database.yml for your Ruby on Rails app.
+
+``` YAML 
+ development:
+  adapter: mysql2
+  encoding: utf8
+  database: app_development
+  username: root
+  password: mysecurepass
+  host: db
+  port: 3306
+```
+ 
+Notice that we are using "db" as the host name of the database.
+ 
+You can use this strategy with all the services you need for your app.
+
+Once you have all running, start your app and enjoy!
+
+Troubleshooting and tips:
+
+In development you might want to change the code while is running. 
+
+You can "mount" your folder in the container running it like this:
+
+ ``` docker run -ti -v ${PWD}:/app --link db:db myimage ```
+
+You might want to use docker-compose to facilitate the start and stop process of your app with all the services that it depends from.  
+
 ---
