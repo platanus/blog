@@ -49,10 +49,9 @@ Now build the image:
 
 If you run it again you will find that is much faster because docker caches the building process.
 
-The problem with our Dockerfile is that the "ADD" line will be ran everytime that any file in our current folder changes. That would be very annoying.
+The problem with our Dockerfile is that the "ADD" line will be ran everytime that any file in our current folder changes (this includes the `RUN bundle install` line). That would be very annoying.
 
 So to avoid that copy your Gemfile to a Gemfile.base file and lets change our Dockerfile like this:
-
 
 ```
 FROM ruby:2.1
@@ -101,15 +100,15 @@ When we do this, Docker creates a bunch of nice-to-have configuration so we can 
 
 Now this is a example database.yml for your Ruby on Rails app.
 
-```YAML
+```
 development:
- adapter: mysql2
- encoding: utf8
- database: app_development
- username: root
- password: mysecurepass
- host: db
- port: 3306
+  adapter: mysql2
+  encoding: utf8
+  database: app_development
+  username: root
+  password: mysecurepass
+  host: db
+  port: 3306
 ```
 
 Notice that we are using "db" as the host name of the database.
@@ -118,7 +117,9 @@ You can use this strategy with all the services you need for your app.
 
 Once you have all running, start your app and enjoy!
 
-###Troubleshooting and tips:
+## Troubleshooting and tips
+
+#### Mount the folder app in the container
 
 In development you might want to change the code while is running.
 
@@ -126,5 +127,27 @@ You can "mount" your folder in the container running it like this:
 
 ``` docker run -ti -v ${PWD}:/app --link db:db myimage ```
 
-You might want to use docker-compose to facilitate the start and stop process of your app with all the services that it depends from.
+#### Enter the container
+
+You can also run bash to "enter" to the container:
+
+``` docker run -ti -v ${PWD}:/app --link db:db myimage bash```
+
+#### Logs and Tails
+
+You can look at the logs of the container with `docker logs`
+
+``` docker logs CONTAINER_ID```
+
+And you can do something similar to tail -f on the logs like this
+
+``` docker logs -f CONTAINER_ID```
+
+And also you can tell the logs to only include the last 100 lines like this
+
+``` docker logs -f --tail=100 CONTAINER_ID```
+
+#### Docker Compose
+
+You might want to use docker-compose to facilitate the start and stop process of your app stack. You can find more information about docker-compose [here](https://docs.docker.com/compose/)
 
