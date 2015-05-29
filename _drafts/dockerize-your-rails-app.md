@@ -15,9 +15,9 @@ In Ubuntu:
 
 ```wget -qO- https://get.docker.com/ | sh```
 
-If that doesn't work for you go to [Docker official site](https://docs.docker.com/installation/ubuntulinux/#installing-docker-on-ubuntu)
+If that doesn't work, you could go to the [Docker official site](https://docs.docker.com/installation/ubuntulinux/#installing-docker-on-ubuntu)
 
-If you run OSX go to [Docker Installation for Mac](https://docs.docker.com/installation/mac/)
+In case of OSX go to [Docker Installation for Mac](https://docs.docker.com/installation/mac/)
 
 ## Build your Docker image
 
@@ -43,11 +43,11 @@ Then we ADD the code of our app to the /app folder.
 Then we run bundle install to install the gems needed for our app.
 Finally we tell the image that our default command to run is "rails s".
 
-Now build the image:
+Now build your image:
 
 `docker build -t myimage .`
 
-If you run it again you will find that is much faster because docker caches the building process.
+If you run it again you will find that it takes less time to build. Thats because docker caches the building process.
 
 The problem with our Dockerfile is that the "ADD" line will be ran everytime that any file in our current folder changes (this includes the `RUN bundle install` line). That would be very annoying.
 
@@ -80,7 +80,7 @@ Run it like this:
 
 ``` docker run -ti myimage ```
 
-You will probably get errors if your app depends on other services. i.e a database.
+You will probably get errors if your app depends on other services, i.e a database.
 
 Identify the services that your app uses. Mysql? Redis? MongoDB?
 
@@ -117,21 +117,9 @@ You can use this strategy with all the services you need for your app.
 
 Once you have all running, start your app and enjoy!
 
+``` docker run -ti --link db:db myimage ``
+
 ## Troubleshooting and tips
-
-#### Mount the folder app in the container
-
-In development you might want to change the code while is running.
-
-You can "mount" your folder in the container running it like this:
-
-``` docker run -ti -v ${PWD}:/app --link db:db myimage ```
-
-#### Enter the container
-
-You can also run bash to "enter" to the container:
-
-``` docker run -ti -v ${PWD}:/app --link db:db myimage bash```
 
 #### Logs and Tails
 
@@ -147,7 +135,22 @@ And also you can tell the logs to only include the last 100 lines like this
 
 ``` docker logs -f --tail=100 CONTAINER_ID```
 
+#### Mount the folder app in the container
+
+In development you might want to change the code while is running.
+
+You can "mount" your folder in the container running it like this:
+
+``` docker run -ti -v ${PWD}:/app --link db:db myimage ```
+
+#### Enter the container
+
+You can also run bash to "enter" to the container:
+
+``` docker run -ti -v ${PWD}:/app --link db:db myimage bash```
+
 #### Docker Compose
 
+docker-compose is a Docker tool that helps you manage a group of docker containers and their dependencies. 
 You might want to use docker-compose to facilitate the start and stop process of your app stack. You can find more information about docker-compose [here](https://docs.docker.com/compose/)
 
