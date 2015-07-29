@@ -2,7 +2,7 @@
 layout: post
 title: Máquinas de Estado en Ruby y en Ruby on Rails
 author: juliogarciag
-categories:
+tags:
     - ruby
     - rails
 ---
