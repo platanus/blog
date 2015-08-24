@@ -13,7 +13,7 @@ tags:
 
 ## Introducción a Mandrill
 
-En una aplicación rails, normalmente usaríamos Amazon SES para enviar los mails transaccionales. Muchas veces el cliente quisiera ver reportes de los envíos o también la posibilidad de editarlos. El objetivo de este post es explicar como enviar todos los mails de una aplicación rails a través del servicio mandrill.com.
+En una aplicación Rails, normalmente usaríamos Amazon SES para enviar los mails transaccionales. Amazon funciona bien y es económico, pero muchas veces el cliente quisiera ver reportes de los envíos o quisiera poder editar un poco el template del correo que envía su aplicación. El objetivo de este post es explicar cómo enviar los mails de una aplicación Rails a través del servicio que ofrece mandrill.com.
 
 ### Api Keys
 
@@ -23,8 +23,7 @@ Puedes crear api keys con algunas opciones. Algo muy util es la opción de “te
 
 Puedes autorizar múltiples dominios. Fácilmente se siguen las instrucciones para además configurar correctamente el DKIM y SPF.
 
-
-Se puede usar el API de Mandrill o las credenciales SMTP para enviar los mails. Nosotros abarcaremos el uso del API.
+Se puede usar el API HTTP de Mandrill o las credenciales SMTP para enviar los mails. Nosotros preferimos el uso del API HTTP.
 
 ### Templates
 Puedes crear tantos templates como la aplicación requiera. En cada template debes preocuparte de dejar **publicada** una versión que tenga al menos:
@@ -34,7 +33,7 @@ Puedes crear tantos templates como la aplicación requiera. En cada template deb
 - From Name
 - Subject
 
-Si no defines esos valores, el mail no se mandará y es un poco invisible ese error.
+Si no defines esos valores, el mail no se mandará ( y ojo, que el error es un poco invisible).
 
 ### Templates Dinámicos
 
@@ -61,7 +60,7 @@ Acabas de comprar estos productos:
 
 Es súper básica la edición de los templates dentro de Mandrill. Es por eso que se pueden exportar los templates desde Mailchimp. Con esta [guía](https://mandrill.zendesk.com/hc/en-us/articles/205583097-How-do-I-add-a-MailChimp-template-to-my-Mandrill-account-) queda muy claro como hacerlo.
 
-Ojo que no logramos usar handlebars desde acá!
+Ojo, que no logramos usar handlebars desde acá!
 
 ### Api Logs
 
@@ -168,7 +167,7 @@ class PetsMailer < ActionMailer::Base
 
 ```
 
-Se puede ver que no estamos utilizando el método `mail` de ActionMailer sino `send_mail`. Este método recibe 3 parametros.
+Se puede ver que no estamos utilizando el clásico método `mail` de ActionMailer sino `send_mail`. Este método recibe 3 parametros.
 
 1. **to:** Puede ser una dirección de mail(string) o un arreglo de direcciones
 2. **template:** El nombre del template(**slug**) a utilizar en el envío
