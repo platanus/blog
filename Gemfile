@@ -7,7 +7,7 @@ gem "rake"
 gem "sass"
 gem "uglifier"
 # gem "github-pages"
-gem "rouge", "~> 1.9.0"
+gem "rouge", "1.9.0"
 
 group :jekyll_plugins do
   gem "jekyll-gist"

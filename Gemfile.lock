@@ -55,7 +55,7 @@ GEM
     rb-fsevent (0.9.5)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    rouge (1.9.1)
+    rouge (1.9.0)
     ruby-nuggets (1.0.0)
       nuggets (= 1.0.0)
     safe_yaml (1.0.4)
@@ -89,7 +89,7 @@ DEPENDENCIES
   jekyll-redirect-from (~> 0.8.0)
   jekyll-tagging
   rake
-  rouge (~> 1.9.0)
+  rouge (= 1.9.0)
   sass
   uglifier
 
