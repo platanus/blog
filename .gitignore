@@ -4,3 +4,4 @@ _site
 _data/team
 
 .jekyll-assets-cache
+.jekyll-metadata

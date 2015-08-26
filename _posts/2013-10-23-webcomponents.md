@@ -96,7 +96,7 @@ Para esto modificamos el archivo `pagination-element.html` y deberia quedar asi:
 
 Con este codigo, tenemos un nuevo elemento llamado `pagination-element` que acepta un attribute `count` donde definimos el numero de paginas a utilizar.
 
-El template que usamos en polymer muestra la capacidad de databinding que tiene utilizando los `{{}}` para leer las variables definidas en `this`.
+El template que usamos en polymer muestra la capacidad de databinding que tiene utilizando los `\{\{\}\}` para leer las variables definidas en `this`.
 
 Este es un ejemplo muy basico de WebComponent pero deberia dar una idea del potencial que tiene.
 
