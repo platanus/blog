@@ -1,0 +1,18 @@
+web:
+  ports:
+  - 80/tcp
+  restart: always
+  tty: true
+  image: platanus/blog
+  stdin_open: true
+lb:
+  ports:
+  - 80:80
+  restart: always
+  labels:
+    io.rancher.loadbalancer.target.web: cb.platan.us:80=80
+  tty: true
+  image: rancher/load-balancer-service
+  links:
+  - web:web
+  stdin_open: true
