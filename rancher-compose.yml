@@ -1,6 +1,2 @@
 web:
   scale: 1
-lb:
-  scale: 1
-  load_balancer_config:
-    name: lb config
