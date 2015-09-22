@@ -1,0 +1,5 @@
+#!/bin/bash
+
+VERSION=`git rev-parse --short HEAD`
+docker build -t platanus/blog:$VERSION .
+
