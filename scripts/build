@@ -2,4 +2,5 @@
 
 VERSION=`git rev-parse --short HEAD`
 docker build -t platanus/blog:$VERSION .
+docker tag platanus/blog:$VERSION platanus/blog:latest
 

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+docker run -v ${PWD}/_drafts:/srv/www/_drafts -p 4000:4000 platanus/blog jekyll serve --watch --force_polling --drafts --host 0.0.0.0
