@@ -9,6 +9,8 @@ gem "uglifier"
 # gem "github-pages"
 gem "rouge", "1.9.0"
 
+gem 'therubyracer'
+
 group :jekyll_plugins do
   gem "jekyll-gist"
   gem "jekyll-tagging"
