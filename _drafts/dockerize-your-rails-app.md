@@ -7,10 +7,10 @@ tags:
     - docker
 ---
 
-This post its an introduction to containerize your Ruby on Rails application with Docker. You will find out how to build an image of your app and how to run it.
+This post its an introduction to containerizing your Ruby on Rails application with Docker. You will find out how to build an image of your app and how to run it.
  
 ## First step: install Docker. 
- 
+
 In Ubuntu: 
 
 ```wget -qO- https://get.docker.com/ | sh```
@@ -40,8 +40,8 @@ This is the minimal expression of a Dockerfile. Dockerfiles are recipes for buil
 
 This image is based on the ruby:2.1 image.
 Then we ADD the code of our app to the /app folder.
-Then we run bundle install to install the gems needed for our app.
-Finally we tell the image that our default command to run is "rails s".
+We run bundle install to install the gems needed for our app.
+Finally, we tell the image that our default command to run is "rails s".
 
 Now build your image:
 
@@ -113,7 +113,7 @@ development:
 
 Notice that we are using "db" as the host name of the database.
 
-You can use this strategy with all the services you need for your app.
+You can use this strategy with all the services you need for your app. Linking to other containers adds a lot of environmental variables some are useful. You can find out more about linking here: [Docker Linking](https://docs.docker.com/userguide/dockerlinks/)
 
 Once you have all running, start your app and enjoy!
 
