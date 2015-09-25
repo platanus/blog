@@ -11,6 +11,7 @@ gems:
   - jekyll-assets
   - jekyll/tagging
   - jekyll-redirect-from
+  - jekyll-paginate
 
 exclude:
   - _data

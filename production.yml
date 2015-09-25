@@ -1,0 +1,5 @@
+web:
+  restart: always
+  tty: true
+  image: platanus/blog:7baad98
+  stdin_open: true
