@@ -10,6 +10,9 @@ To run jekyll on development just run the following. This will let you browse th
 
 ```bash
 jekyll serve --drafts
+
+# to run with docker
+scripts/draft_server
 ```
 
 ##### Create a post
