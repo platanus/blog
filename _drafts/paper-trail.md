@@ -8,7 +8,7 @@ tags:
   - activerecord
 ---
 
-Uno de los problemas a los que frecuentemente nos enfrentamos es manejar diferentes versiones de un modelo, la mejor forma de hacerlo es utilizando [la gema Paper Trail](https://github.com/airblade/paper_trail).
+Uno de los problemas a los que frecuentemente nos enfrentamos es manejar diferentes versiones de un modelo, una forma de hacerlo es utilizando [la gema Paper Trail](https://github.com/airblade/paper_trail).
 
 ## Instalando Paper Trail
 
@@ -115,17 +115,6 @@ post.versions.last.changeset
 # }
 ```
 
-
-#### Datos adicionales
-
-Además, si estamos dentro de un controlador que tiene disponible el método `current_user`, podemos saber quién fue el usuario que hizo la actualización:
-
-```ruby
-post = BlogPost.find(1)
-version = post.versions.last
-version.whodunnit # El ID del current_user si estuviera disponible
-```
-
 ## Configurando Paper Trail
 
 #### Ignorando campos
@@ -217,4 +206,28 @@ Ademas, si lo juntamos con el ejemplo de la metadata, podemos realizar un query 
 
 ```ruby
 BlogPostVersion.where(author_id: user.id)
+```
+
+#### Asignando el usuario responsable de los cambios
+
+Por defecto Paper Trail inyecta en `ApplicationController::Base` el método `user_for_paper_trail` que por defecto hace una llamada a `current_user`. Podemos modificar a quién se le asigna en el controlador base o proveer el método `user_for_paper_trail` en una clase diferente.
+
+```ruby
+class BlogPostContentProcessorService
+
+  def update(user, post)
+    @user = user
+    post.update_attributes(content: process(content))
+    version = post.versions.last
+    version.whodunnit # El ID del user_for_paper_trail
+  end
+
+  def user_for_paper_trail
+    @user
+  end
+
+  def process(content)
+    # do something here
+  end
+end
 ```
