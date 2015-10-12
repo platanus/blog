@@ -41,6 +41,7 @@ GEM
       listen (~> 2.7)
     json (1.8.3)
     kramdown (1.8.0)
+    libv8 (3.16.14.11)
     liquid (3.0.6)
     listen (2.10.1)
       celluloid (~> 0.16.0)
@@ -55,6 +56,7 @@ GEM
     rb-fsevent (0.9.5)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
+    ref (2.0.0)
     rouge (1.9.0)
     ruby-nuggets (1.0.0)
       nuggets (= 1.0.0)
@@ -70,6 +72,9 @@ GEM
     sprockets-sass (1.3.1)
       sprockets (~> 2.0)
       tilt (~> 1.1)
+    therubyracer (0.12.2)
+      libv8 (~> 3.16.14.0)
+      ref
     tilt (1.4.1)
     timers (4.0.1)
       hitimes
@@ -91,6 +96,7 @@ DEPENDENCIES
   rake
   rouge (= 1.9.0)
   sass
+  therubyracer
   uglifier
 
 BUNDLED WITH
