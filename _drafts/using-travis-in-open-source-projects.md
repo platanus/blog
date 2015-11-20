@@ -25,7 +25,7 @@ You will want to use Travis in one of these cases:
 
 ### Speed Up Tests
 
-You can speed-up your tests on Jarvis following these best practices:
+You can speed-up your tests on Travis following these best practices:
 
 - [Exclude non-essential Dependencies](http://docs.travis-ci.com/user/languages/ruby/#Speed-up-your-build-by-excluding-non-essential-dependencies)
 
