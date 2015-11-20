@@ -5,7 +5,7 @@ require 'yaml'
 module Jekyll
   class Data < Generator
     def generate(site)
-      data_path = File.join(site.config['source'], site.config['data_source'])
+      data_path = File.join(site.config['source'], site.config['data_dir'])
       resources = site.config['data_fetch_resources']
 
       resources.each do |r|

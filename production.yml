@@ -1,5 +1,5 @@
 web:
   restart: always
   tty: true
-  image: platanus/blog:7baad98
+  image: platanus/blog:dfd71eb
   stdin_open: true
