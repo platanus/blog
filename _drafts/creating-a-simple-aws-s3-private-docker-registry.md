@@ -11,7 +11,7 @@ tags:
 
 The objective of this post its to show how with a few lines of code you can have a Private Docker Registry running on your own AWS infrastructure. Also this way of running a registry can be run on each machine and generating traffic only to S3 so your registry would have HA by default and the security restrictions that S3 provides.
 
-## Steps
+### Steps
 
 - Create a S3 bucket.
 
@@ -32,9 +32,9 @@ The objective of this post its to show how with a few lines of code you can have
 
 With this we are giving full access to our registry bucket so the container can store the images in it.
 
-- Start your Docker Enabled machine.
+### Start your Docker Enabled machine.
 
-- Use this script to run your Private Registry.
+Use this script to run your Private Registry.
 
 ```bash
 #!/bin/sh
@@ -50,7 +50,7 @@ You should be careful with only 2 things here. The S3_REGION and the S3_BUCKET t
 
 Our registry should be working now on localhost port 5000.
 
-- Pull, Tag, Push
+### Pull, Tag, Push
 
 We can test if everything is running ok pushing a version of busybox to our Private Registry.
 
