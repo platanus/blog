@@ -23,24 +23,6 @@ You will want to use Travis in one of these cases:
 
 - You care only about one system. Travis and most of CI-as-a-service solutions are not useful for multi-system acceptance testing. In most of the cases though is enough to split the multi-system testing on testing each system using mockups.
 
-### Speed Up Tests
-
-You can speed-up your tests on Travis following these best practices:
-
-- [Exclude non-essential Dependencies](http://docs.travis-ci.com/user/languages/ruby/#Speed-up-your-build-by-excluding-non-essential-dependencies)
-
-- [Cache Bundler](http://docs.travis-ci.com/user/caching/)
-
-- [Parallelise](http://docs.travis-ci.com/user/speeding-up-the-build/#Parallelizing-your-builds-across-virtual-machines)
-
-- [Run in the New Container Infrastructure](http://docs.travis-ci.com/user/migrating-from-legacy/#How-can-I-use-container-based-infrastructure%3F)(*Not recommended when your tests are DB hungry, travis right now doesn’t use in-memory db on the container infrastructure.*)
-
-### Security
-
-Currently travis allows encryption of environtment variables, notification settings, and deploy api keys.
-
-http://docs.travis-ci.com/user/encryption-keys/
-
 #### Example
 
 Lets say we have an Open Source project like
@@ -94,6 +76,24 @@ In the example above this will result on something like this on the README file.
 
 [travis-badge]: https://travis-ci.org/platanus/pincers.svg?branch=master
 ```
+
+### Security
+
+Currently travis allows encryption of environtment variables, notification settings, and deploy api keys.
+
+http://docs.travis-ci.com/user/encryption-keys/
+
+### Speed Up Tests
+
+You can speed-up your tests on Travis following these best practices:
+
+- [Exclude non-essential Dependencies](http://docs.travis-ci.com/user/languages/ruby/#Speed-up-your-build-by-excluding-non-essential-dependencies)
+
+- [Cache Bundler](http://docs.travis-ci.com/user/caching/)
+
+- [Parallelise](http://docs.travis-ci.com/user/speeding-up-the-build/#Parallelizing-your-builds-across-virtual-machines)
+
+- [Run in the New Container Infrastructure](http://docs.travis-ci.com/user/migrating-from-legacy/#How-can-I-use-container-based-infrastructure%3F)(*Not recommended when your tests are DB hungry, travis right now doesn’t use in-memory db on the container infrastructure.*)
 
 ### References
 
