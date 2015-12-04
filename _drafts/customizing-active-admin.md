@@ -163,3 +163,5 @@ end
 Y ahora tenemos una interfaz mucho más ordenada que nos permite visualizar la información importante de nuestros modelos:
 
 ![Detalle de la aplicación](/images/customizing-active-admin/resource-bigger-columns.png)
+
+El código fuente para poder revisar el resultado final se encuentra en este repositorio [platanus/active-admin-ui-example](https://github.com/platanus/active-admin-ui-example)
