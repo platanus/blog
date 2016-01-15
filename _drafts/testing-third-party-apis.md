@@ -21,7 +21,7 @@ Hay gemas que nos ayudan que nuestras pruebas funcionen mejor, por ejemplo:
 
 - **[Webmock](https://github.com/bblimke/webmock)** desactiva los requests a cualquier servicio externo e ir devolviendo respuestas predeterminadas por cada URL.
 
-- **[VCR](https://github.com/vcr/vcr)** ejecuta nuestros tests una vez contra los servicios reales y guarda las respuestas en un JSON (cassettes), de forma que la siguiente vez que la suite se ejecute ese JSON servirá para mockear la respuesta del servidor.
+- **[VCR](https://github.com/vcr/vcr)** ejecuta nuestros tests una vez contra los servicios reales y guarda las respuestas en un JSON (cassettes), de forma que la siguiente vez que la suite se ejecute ese JSON servirá para simular la respuesta del servidor.
 
 Sin embargo, todas estas gemas añaden una capa de complejidad a nuestra suite:
 
@@ -73,7 +73,7 @@ describe TwitterService do
 end
 ```
 
-Aquí vemos claramente que estamos procesando un request gigante sólo para probar que funcione la conexión con Twitter, puesto que la validación del formato correctodebería ir en el `ReachCalculator`. Por suerte usando un mock de RSpec podemos mejorar este test de forma muy simple:
+Aquí vemos claramente que estamos procesando un request gigante sólo para probar que funcione la conexión con Twitter, puesto que la validación del formato correcto debería ir en el `ReachCalculator`. Por suerte usando un mock de RSpec podemos mejorar este test de forma muy simple:
 
 
 ```ruby
