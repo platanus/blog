@@ -118,7 +118,7 @@ def fetch_categorized_posts
 end
 ```
 
-Podemos devolver el REPL a un estado limpio de breakpoints usando el comando `reset`. Si hemos hecho cambios en nuestro código, `reload!` actualizará el código que se muestra en el REPl también
+Podemos devolver el REPL a un estado limpio de breakpoints usando el comando `reset`. Si hemos hecho cambios en nuestro código, `reload!` actualizará el código que se muestra en el REPl también.
 
 ## Navegando el stack
 
@@ -153,3 +153,108 @@ Los primeros frames son los más interesantes para nosotros porque son los méto
 Por ejemplo, para ir al controlador podríamos ejecutar `frame 5`, o para ir al método `User.fetch_user_posts` podemos ejecutar `frame 4`.
 
 Otra forma de navegar entre frames es con los métodos `up` y `down`. Si empezamos en el frame 0, `up` nos lleva al frame superior, en este caso el 1. Luego, para bajar a un frame inferior, `down` nos llevaría del frame 5 al 4.
+
+## Navegando por nuestra aplicación
+
+Un comando que es muy útil para revisar el código de la aplicación es `show-method`, por ejemplo:
+
+```ruby
+show-method User.fetch_user_posts
+```
+
+Nos muestra más información sobre el método y su contexto, esto también se puede usar con los métodos de otras librerías y de Ruby mismo (incluso con los métodos nativos de C!) :
+
+```ruby
+From: /Users/arturo/dev/projects/platanus/blog-test-app/app/models/user.rb @ line 9:
+Owner: <Class:User(id: integer, email: string, encrypted_password: string, reset_password_token: string, reset_password_sent_at: datetime, remember_created_at: datetime, sign_in_count: integer, current_sign_in_at: datetime, last_sign_in_at: datetime, current_sign_in_ip: string, last_sign_in_ip: string, created_at: datetime, updated_at: datetime)>
+Visibility: public
+Number of lines: 5
+
+def self.fetch_user_posts
+  self.all.map do |user|
+    user.fetch_categorized_posts
+  end
+end
+```
+
+Para ir navegando entre clases usamos `cd`, podemos ir a la clase `User` ejecutando:
+
+`cd User`
+
+Y desde ahí podemos obtener la información de los métodos que ha definido y heredado utilizando `ls`
+
+```
+[24] pry(User):1> ls
+constants:
+  ActiveRecord_AssociationRelation           ActiveRecord_Relation
+  ActiveRecord_Associations_CollectionProxy  GeneratedAssociationMethods
+Object.methods: yaml_tag
+ActiveModel::Naming#methods: model_name
+ActiveSupport::Benchmarkable#methods: benchmark
+ActiveSupport::DescendantsTracker#methods: descendants  direct_descendants
+ActiveRecord::ConnectionHandling#methods:
+  clear_active_connections!      connected?         connection_id=        remove_connection
+  clear_all_connections!         connection         connection_pool       retrieve_connection
+  clear_cache!                   connection_config  establish_connection
+  clear_reloadable_connections!  connection_id      mysql2_connection
+ActiveRecord::QueryCache::ClassMethods#methods: cache  uncached
+ActiveRecord::Querying#methods:
+  any?          destroy_all  find_in_batches        forty_two   joins    offset      second!  update
+  average       distinct     find_or_create_by      forty_two!  last     order       select   update_all
+  calculate     eager_load   find_or_create_by!     fourth      last!    pluck       sum      where
+  count         except       find_or_initialize_by  fourth!     limit    preload     take
+  count_by_sql  exists?      first                  from        lock     readonly    take!
+  create_with   fifth        first!                 group       many?    references  third
+  delete        fifth!       first_or_create        having      maximum  reorder     third!
+  delete_all    find_by_sql  first_or_create!       ids         minimum  rewhere     uniq
+  destroy       find_each    first_or_initialize    includes    none     second      unscope
+ActiveModel::Translation#methods: human_attribute_name
+ActiveRecord::Translation#methods: i18n_scope  lookup_ancestors
+ActiveRecord::DynamicMatchers#methods: respond_to?
+...
+```
+
+E investigar las variables locales y de clase que esta clase maneja con `ls -i`:
+
+```
+[25] pry(User):1> ls -i
+instance variables:
+  @__reflections                    @columns_hash                   @persistable_attribute_names
+  @arel_engine                      @content_columns                @primary_key
+  @arel_table                       @default_attributes             @quoted_primary_key
+  @attribute_method_matchers_cache  @finder_needs_type_condition    @quoted_table_name
+  @attribute_methods_generated      @generated_association_methods  @relation
+  @attributes_builder               @generated_attribute_methods    @relation_delegate_cache
+  @column_names                     @inheritance_column             @sequence_name
+  @column_types                     @locking_column                 @table_name
+  @columns                          @parent_name
+class variables:
+  @@configurations               @@maintain_test_schema              @@time_zone_aware_attributes
+  @@default_timezone             @@primary_key_prefix_type           @@timestamped_migrations
+  @@dump_schema_after_migration  @@raise_in_transactional_callbacks
+  @@logger                       @@schema_format
+```
+
+## Editando código desde Pry
+
+Lo primero es configurar el editor que queremos usar, hay que agregar la siguiente línea al archivo `.pryrc`
+
+```ruby
+Pry.config.editor = "vim"
+```
+
+Ahora, al momento de detener la ejecución podemos editar el frame actual utilizando:
+
+```bash
+edit -c
+```
+
+O usar la sintaxis de `.` y `#` para pasar métodos de clase e instancia como argumento de edit:
+
+```bash
+edit User
+edit User.fetch_user_posts
+edit Posts#fetch_external_links
+```
+
+Eso nos abrirá el editor con la clase o método que deseamos.
