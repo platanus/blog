@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pallet
+title: Manejando upload de archivos con Pallet & Friends
 author: ldlsegovia
 tags:
   - rails
