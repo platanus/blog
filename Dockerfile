@@ -11,6 +11,6 @@ ADD Gemfile.lock Gemfile.lock
 RUN bundle install
 
 ADD . /srv/www/
-RUN jekyll build -f --verbose
+RUN jekyll build --verbose
 
 EXPOSE 80
