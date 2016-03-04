@@ -10,12 +10,12 @@ module Jekyll
         memo
       end
 
-      site.posts.reverse.each do |post|
-        post.tags.each do |tag|
+      site.posts.docs.reverse_each do |post|
+        post.data['tags'].each do |tag|
           output[tag] << {
-            title: post.title,
+            title: post.data['title'],
             url: site.config["url"] + post.url,
-            date: post.date,
+            date: post.date
           }
         end
       end
