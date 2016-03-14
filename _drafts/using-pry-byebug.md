@@ -10,6 +10,12 @@ tags:
   - byebug
 ---
 
+## Introducción
+
+Pry y Byebug son dos herramientas que nos sirven bastante para desarrollar aplicaciones de Ruby: [Pry](https://github.com/pry/pry) nació como un reemplazo de IRB (el intérprete de Ruby), mientras que [Byebug](https://github.com/deivid-rodriguez/byebug)	 empezó siendo un sucesor espiritual de la gema `debugger` debido a que esta no funciona con Ruby 2.0.
+
+La gema de `pry-byebug` añade los comandos de debugging y comportamiento de Byebug a Pry, permitiéndonos usar los poderes (introspección, historial de comandos, navegación por nuestro codebase, el de librerías y el de Ruby en sí, etc) que ofrece este último.
+
 ## Instalación
 
 Lo primero es añadir la gema a nuestro `Gemfile` (esta tiene como dependencias a `pry` y `byebug`):
@@ -17,7 +23,6 @@ Lo primero es añadir la gema a nuestro `Gemfile` (esta tiene como dependencias 
 ```ruby
 group :development, :test do
   gem "pry-byebug"
-  gem "pry-stack_explorer"
 end
 ```
 
@@ -122,7 +127,16 @@ Podemos devolver el REPL a un estado limpio de breakpoints usando el comando `re
 
 ## Navegando el stack
 
-Cada llamada que estamos haciendo representa un `frame` o nivel del stack, podemos verlas mediante el comando `pry-backtrace`, pero presenta el stack completo sin números de frames, por eso añadimos un plugin de Pry que nos ayudará con esto. Al ejectuar `show-stack` obtenemos esto:
+Cada llamada que estamos haciendo representa un `frame` o nivel del stack, podemos verlas mediante el comando `pry-backtrace`, pero presenta el stack completo sin números de frames, por eso añadimos un plugin de `pry-stack-explorer` que nos ayudará con esto.
+
+```ruby
+group :development, :test do
+  gem "pry-byebug"
+  gem "pry-stack_explorer"
+end
+```
+
+Al ejectuar `show-stack` obtenemos esto:
 
 ```
 Showing all accessible frames in stack (88 in total):
