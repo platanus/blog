@@ -10,8 +10,6 @@ tags:
   - byebug
 ---
 
-## Introducción
-
 Pry y Byebug son dos herramientas que nos sirven bastante para desarrollar aplicaciones de Ruby: [Pry](https://github.com/pry/pry) nació como un reemplazo de IRB (el intérprete de Ruby), mientras que [Byebug](https://github.com/deivid-rodriguez/byebug)	 empezó siendo un sucesor espiritual de la gema `debugger` debido a que esta no funciona con Ruby 2.0.
 
 La gema de `pry-byebug` añade los comandos de debugging y comportamiento de Byebug a Pry, permitiéndonos usar los poderes (introspección, historial de comandos, navegación por nuestro codebase, el de librerías y el de Ruby en sí, etc) que ofrece este último.
