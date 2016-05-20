@@ -103,7 +103,7 @@ def anon(block_from_args = nil, &block)
 end
 ```
 
-## Asegurando la limpieza de la función
+El último paso es asegurarnos de que aún si ocurre una excepción, el namespace global se mantendrá limpio, por esto incluiremos las llamadas dentro de un bloque begin/ensure:
 
 ```ruby
 def anon(block_from_args = nil, &block)
