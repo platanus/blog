@@ -54,7 +54,7 @@ Los services y commands atacan objetivos similares, tal vez todavía son difusas
 
 * ¿Necesitamos una clase que guarde su estado, y se hacen varias llamadas en distintos momentos a una misma instancia de ella?
 
-* ¿La lógica de la implementación es excesivamente compleja, tiene llamados a APIs a alguna librería sofisticada?
+* ¿La lógica de la implementación es excesivamente compleja, tiene llamados a APIs o a alguna librería sofisticada?
 
 Si la respuesta fue afirmativa para alguna, corresponde un service.  De lo contrario, crea un command.
  
