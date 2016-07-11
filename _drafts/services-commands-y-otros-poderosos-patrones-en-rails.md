@@ -83,7 +83,8 @@ Los Commands también se incluyen en la gema Power Types, donde existe un módul
 Como una alternativa adicional surge los Utils para cuando necesitamos varias funciones relacionadas muy acotadas e independientes de contexto.  El mejor ejemplo es el módulo Math de Ruby, que ofrece los métodos cos(x), sin(x), log(x), sqrt(x) etc.  La forma de implementar un Util es usando los modules de Ruby. Le ponemos un nombre que agrupe a las funciones y en el las cremos directamente.  Por ejemplo, en el contexto de nuestra app musical, imaginemos que puede aplicar efectos de sonido sobre las canciones, estos podrían estar encapsulados en un Util:
 
 ```ruby
-module SongEffects
+module SongEffects  
+  extend self
 
   def amplify(song, factor)
     song.samples.map {|sample| sample * factor}
