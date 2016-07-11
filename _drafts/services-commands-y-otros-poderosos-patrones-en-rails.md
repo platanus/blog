@@ -108,7 +108,7 @@ Por ejemplo, consideremos el servicio del comienzo del post RelatedMediaService,
 ```
 {recommendation: #<Artist: name: "The Doors">, source: #<Song: artist: "Led Zeppelin", title: "Stairway to Heaven">, score: 3}
 ```
-Sin embargo, aporta más claridad que nos retorne un arreglo de objetos de tipo Suggestion, que es un Value compuesto así:
+Sin embargo, aporta más claridad que nos retorne un arreglo de objetos de tipo Recommendation, que es un Value compuesto así:
 
 ```ruby
 class Recommendation
@@ -128,5 +128,5 @@ end
 
 ## Manos a la obra
 
-Bueno, ya conoces estos patrones  ¡La idea es ahora que los empieces a usar!  Es importante que se difundan las convenciones que son un aporte como propuesta de diseño de un proyecto Rails.  El que todo nuestro equipo comparta estos patrones facilita la comprensión de código creado por los distintos miembros.  Al ver uno de estos tipos de clase ya se tiene una idea que función cumple, y también podemos saber dentro de que archivos ubicar cierta lógica.
+Bueno, ya conoces estos patrones  ¡Ahora a usarlos!  Es importante que se difundan las convenciones que son un aporte como propuesta de diseño de un proyecto Rails.  El que todo nuestro equipo comparta estos patrones facilita la comprensión de código creado por los distintos miembros.  Al ver uno de estos tipos de clase ya se tiene una idea que función cumple, y también podemos saber dentro de que archivos ubicar cierta lógica.
 
