@@ -43,7 +43,7 @@ end
 ```
 Aquí vemos que la clase opera como una función:  recibe un input, ejecuta una operación, y da un output.  En cuanto al output, podemos optar entre que sea a través del retorno del método perform, o bien no retornar nada si no que el servicio internamente modifique los objetos sobre los que actúa.
 
-Para trabajar con estos poderosos tipos de  clases, en Platanus desarrollamos la gema Power Types.  Esta gema nos crea las carpetas y clases base para crear Services con una estructura definida.
+Para trabajar con estos poderosos tipos de  clases, en Platanus desarrollamos la gema [Power Types](https://github.com/platanus/power-types).  Esta gema nos crea las carpetas y clases base para crear Services con una estructura definida.
 
 ## Commands
 Los commands también están a nuestra disposición.  Corresponden a una versión más funcional de services.  Se usan para operaciones acotadas y no excesivamente complejas.  Un command solo expone un método perform, que ejecuta la acción que describe el nombre del command.  Este nombre, a diferencia de los services, debe ser un verbo. Y también se diferencia ya que no debe guardar estado si no que ejecutarse de una vez a partir de los argumentos que recibe al inicializarse.
