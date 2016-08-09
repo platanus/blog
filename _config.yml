@@ -1,5 +1,5 @@
 # Jekyll settings
-url: "http://cb.platan.us" # the base hostname & protocol for your site
+url: "https://cb.platan.us" # the base hostname & protocol for your site
 safe: false
 paginate: 10
 permalink: :title
@@ -24,7 +24,7 @@ kramdown:
 
 # Fetch data settings
 data_fetch_resources:
-  - url: http://platan.us/team.json?filter=all
+  - url: https://platan.us/team.json?filter=all
     name: team
     item_name_key: github
 
