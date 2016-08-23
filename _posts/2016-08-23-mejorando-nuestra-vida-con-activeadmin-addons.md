@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Mejorando nuestra vida con ActiveAdmin Addons
+author: gmq
+tags:
+  - rails
+  - active admin
 excerpt_separator: <!--more-->
 
 ---
