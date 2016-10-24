@@ -1,5 +1,9 @@
 # Platanus Blog
 
+## DEPRECATED
+
+> Now we host our blog in medium and use their plaform to write
+
 Usaremos [Jekyll][1] para generar nuestro blog como un sitio estático.
 
 ## Using the command line
